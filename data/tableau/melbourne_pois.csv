@@ -1,0 +1,425 @@
+poi_id,name,category,type,artist,address,description,latitude,longitude
+1,Threaded Field,Art,Artwork,Simon Perry,"157 Wurundjeri Way, DOCKLANDS",Artist: Simon Perry,-37.8152979137773,144.947771877035
+2,Cow Up A Tree,Art,Artwork,John Kelly,"135 Harbour Esplanade, DOCKLANDS",Artist: John Kelly,-37.8171223164672,144.945279753599
+3,Coat of Arms,Art,Artwork,City of Melbourne,"100 Swanston Street, MELBOURNE",Artist: City of Melbourne,-37.8151225543656,144.966479473485
+4,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187207058813,144.974110660022
+5,Thomas Ferguson Memorial Drinking Fountain,Monument,Artwork,unknown,"179 Leicester Street, CARLTON",Artist: unknown,-37.8015394618203,144.960227228018
+6,The Water Nymph,Art,Artwork,Paul Montford,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: Paul Montford,-37.8222098236425,144.971335339413
+7,Blowhole,Art,Artwork,Duncan Stemler,"15 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219524131263,144.946745954515
+8,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187508719706,144.974172398306
+9,Mockridge Fountain,Fountain,Artwork,"Ron Jones, Simon Perry and Darryl Cowie","City Square, Collins St, MELBOURNE","Artist: Ron Jones, Simon Perry and Darryl Cowie",-37.8155224156707,144.966994359113
+10,Signature Work,Art,Artwork,Emily Floyd,"22 Waterview Walk, DOCKLANDS",Artist: Emily Floyd,-37.8192431329106,144.947246784778
+11,Captain Matthew Flinders Statue,Monument,Artwork,Sculptor Charles Web Gilbert; founder F. Barbedienne,"30 Swanston Street, MELBOURNE",Artist: Sculptor Charles Web Gilbert; founder F. Barbedienne,-37.8169633123315,144.967487606224
+12,Art Wall,Art,Artwork,Peter D. Cole,"160 Harbour Esplanade, DOCKLANDS",Artist: Peter D. Cole,-37.8155779391708,144.946321235909
+13,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8202412036118,144.959153249799
+14,Passage,Monument,Artwork,Mark Stoner,"92 Therry Street, MELBOURNE",Artist: Mark Stoner,-37.8074524440917,144.958306664206
+15,Silence,Art,Artwork,Adrian Mauriks,"50 Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150519675867,144.941598936717
+16,Fault Line,Art,Artwork,Hossein Valamesh,"8 Riverside Quay, SOUTHBANK",Artist: Hossein Valamesh,-37.8211525582271,144.964238031747
+17,Speakers Corner,Art,Artwork,Evangelos Sakaris,"Birrarung Marr, MELBOURNE",Artist: Evangelos Sakaris,-37.8200825876335,144.975716740604
+18,Painted Poles,Art,Artwork,Maree Clarke and Sonja Hodge,"50 Swanston Street, MELBOURNE",Artist: Maree Clarke and Sonja Hodge,-37.8162685331984,144.967006461765
+19,Nurse Edith Cavell,Monument,Artwork,Margaret Baskerville,"294 St Kilda Road, SOUTHBANK",Artist: Margaret Baskerville,-37.8279878719975,144.97369919611899
+20,Webb Bridge,Art,Artwork,Robert Owen and Denton Corker Marshall,"50 River Esplanade, DOCKLANDS",Artist: Robert Owen and Denton Corker Marshall,-37.8239756487966,144.947233077573
+21,Poise,Art,Artwork,Warren Langley,"110 Harbour Esplanade, DOCKLANDS",Artist: Warren Langley,-37.8180105674976,144.946830696021
+22,John F. Kennedy Memorial,Monument,Artwork,Raymond B. Ewers,"3 Treasury Place, EAST MELBOURNE",Artist: Raymond B. Ewers,-37.8136597830075,144.976354519479
+23,Painted Poles,Art,Artwork,Jennifer McCarthy,"316 Swanston Street, MELBOURNE",Artist: Jennifer McCarthy,-37.8100968762417,144.964165129049
+24,The Wave,Art,Artwork,Vashti Gonda,"12 Georgiana Street, DOCKLANDS",Artist: Vashti Gonda,-37.821493403054,144.950437271721
+25,Fairies Tree,Art,Artwork,Ola Cohn,"88 Clarendon Street, EAST MELBOURNE",Artist: Ola Cohn,-37.8134099807547,144.98110228888
+26,The Court Favourite,Art,Artwork,Paul Montford,"394 William Street, MELBOURNE",Artist: Paul Montford,-37.81026401562,144.955039032582
+27,Henderson Drinking Fountain,Art,Artwork,Walter MacFarlane,"76 Errol Street, NORTH MELBOURNE",Artist: Walter MacFarlane,-37.8033418056724,144.949739183347
+28,Continuum,Art,Artwork,Michael Snape,"17 Waterview Walk, DOCKLANDS",Artist: Michael Snape,-37.8191896959513,144.946998425444
+29,Constellation,Art,Artwork,Bruce Armstrong and Geoffrey Bartlett,"469 Flinders Street, MELBOURNE",Artist: Bruce Armstrong and Geoffrey Bartlett,-37.8202715915496,144.960597777255
+30,Constellation,Art,Artwork,Bruce Armstrong and Geoffrey Bartlett,"469 Flinders Street, MELBOURNE",Artist: Bruce Armstrong and Geoffrey Bartlett,-37.8202185496201,144.96072531937
+31,Ned and Dan,Art,Artwork,Alexander Knox,"37 Caravel Lane, DOCKLANDS",Artist: Alexander Knox,-37.81452427966,144.940608832218
+32,Weathervanes,Art,Artwork,Daniel Jenkins,"270 Bourke Street, MELBOURNE",Artist: Daniel Jenkins,-37.8134883855915,144.965515931433
+33,Mary Gilbert Memorial,Monument,Artwork,Alisa O'Connor,"Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: Alisa O'Connor,-37.8140756651063,144.97856026709
+34,Walk of Stars,Art,Artwork,Peter Cortlett and Jamie Cooper,"435 Docklands Drive, DOCKLANDS",Artist: Peter Cortlett and Jamie Cooper,-37.8152456579572,144.938853960352
+35,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8186738864394,144.974167165492
+36,Coat of Arms,Art,Artwork,City of Melbourne,"98 Swanston Street, MELBOURNE",Artist: City of Melbourne,-37.8151582937289,144.966495940551
+37,Beyond the Ocean of Existence,Art,Artwork,Loretta Quinn,"44 Swanston Street, MELBOURNE",Artist: Loretta Quinn,-37.8164236569551,144.967061542145
+38,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150960305524,144.941483193022
+39,Zoo Paving,Art,Artwork,Tanya Court and Kate Cullity,"11 Old Poplar Road, PARKVILLE",Artist: Tanya Court and Kate Cullity,-37.7825613531513,144.953293881649
+40,Within Three Worlds,Art,Artwork,Loretta Quinn,"684 Park Street, CARLTON NORTH",Artist: Loretta Quinn,-37.7788722549869,144.961103719498
+41,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200765201921,144.959699691425
+42,City Living,Art,Artwork,Andrew Rogers,"5 Jeffcott Street, WEST MELBOURNE",Artist: Andrew Rogers,-37.8114750198729,144.953165492089
+43,Ceremony and Vehicle for Conveying Spirit,Art,Artwork,Maurie Hughes,"114 Russell Street, MELBOURNE",Artist: Maurie Hughes,-37.8136957980367,144.968513035861
+44,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200785738744,144.959627380846
+45,Resting Place,Art,Artwork,Bronwyn Snow,"335 Swanston Street, MELBOURNE",Artist: Bronwyn Snow,-37.8103720817164,144.964076502567
+46,"Another View, Site 8",Art,Artwork,Ray Thomas,"422 Flinders Street, MELBOURNE",Artist: Ray Thomas,-37.8194133196692,144.960198717453
+47,Aqualung,Art,Artwork,John Mead,"15 Victoria Harbour Promenade, DOCKLANDS",Artist: John Mead,-37.8188433297473,144.945067618085
+48,Architectural Fragment,Art,Artwork,Petrus Spronk,"324 Swanston Street, MELBOURNE",Artist: Petrus Spronk,-37.8098275629139,144.96404608881
+49,William Ievers Junior Memorial Drinking Fountain,Monument,Artwork,Charles Douglas Richardson,"80 Rathdowne Street, CARLTON",Artist: Charles Douglas Richardson,-37.7982578658973,144.97056466482599
+50,South African War Memorial,Monument,Artwork,Architect - G. De Lacy-Evans Sculptor - Joseph Hamilton,"254 St Kilda Road, SOUTHBANK",Artist: Architect - G. De Lacy-Evans Sculptor - Joseph Hamilton,-37.8259414951225,144.971856818756
+51,People's Path,Art,Artwork,Ian Sprague et al,"4 Lansdowne Street, EAST MELBOURNE",Artist: Ian Sprague et al,-37.8110235407409,144.978389216138
+52,Samuel Mauger Drinking Fountain,Monument,Artwork,unknown,"110 Victoria Parade, EAST MELBOURNE",Artist: unknown,-37.8082489459354,144.975315385075
+53,Robert Burns Memorial,Monument,Artwork,George Anderson Lawson,"10 Spring Street, EAST MELBOURNE",Artist: George Anderson Lawson,-37.814373582353,144.974720032667
+54,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150877523684,144.941573967784
+55,Silence,Art,Artwork,Adrian Mauriks,"45 Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8151131017782,144.941629273114
+56,Boy on a Turtle,Art,Artwork,unknown,"Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: unknown,-37.8143892616922,144.979910150531
+57,"Sir Edward ""Weary"" Dunlop",Monument,Artwork,Peter Corlett,"242 St Kilda Road, SOUTHBANK",Artist: Peter Corlett,-37.8253098347073,144.971594300075
+58,Duke and Duchess of York Memorial,Monument,Artwork,J. Churchman & Sons,"512 Elizabeth Street, MELBOURNE",Artist: J. Churchman & Sons,-37.806629256046,144.959908916093
+59,King Edward VII Memorial,Monument,Artwork,Sculptor Edgar Bertram Mackennal; founder A.B. Burton,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: Sculptor Edgar Bertram Mackennal; founder A.B. Burton,-37.8226717982934,144.970988232874
+60,Time and Tide,Art,Artwork,Akio Makigawa,"252 Little Collins Street, MELBOURNE",Artist: Akio Makigawa,-37.8143983948935,144.96625088381
+61,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187628091159,144.974136155999
+62,Threaded Field,Art,Artwork,Simon Perry,"683 La Trobe Street, DOCKLANDS",Artist: Simon Perry,-37.8152785788316,144.947248109473
+63,Vault,Art,Artwork,Ron Roberston-Swann,"51 Grant Street, SOUTHBANK",Artist: Ron Roberston-Swann,-37.8260714214476,144.967732756918
+64,Bust of Dr Louis Smith,Monument,Artwork,Edgar Bertram Mackennal,"9 Nicholson Street, CARLTON",Artist: Edgar Bertram Mackennal,-37.8047443111517,144.972452056885
+65,Painted Poles,Art,Artwork,Jennifer McCarthy,"322 Swanston Street, MELBOURNE",Artist: Jennifer McCarthy,-37.8099325911658,144.964088812819
+66,Silence,Art,Artwork,Adrian Mauriks,"50 Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150528491189,144.94158776112
+67,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.818595693813,144.971821646868
+68,Weathervanes,Art,Artwork,Daniel Jenkins,"184 Swanston Street, MELBOURNE",Artist: Daniel Jenkins,-37.8134422577685,144.965689009116
+69,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.82012299082,144.959360068025
+70,Dolphin Fountain,Fountain,Artwork,June Arnold,"4 Lansdowne Street, EAST MELBOURNE",Artist: June Arnold,-37.8118884344659,144.980015806146
+71,Commonwealth Games Aquatic Sculptures - Eels,Art,Artwork,unknown,"Kensington Community Recreation Centre, KENSINGTON",Artist: unknown,-37.7966290593729,144.924306764698
+72,Eel Trap,Art,Artwork,Fiona Clarke and Ken McKean,"Birrarung Marr, MELBOURNE",Artist: Fiona Clarke and Ken McKean,-37.8191221824373,144.97407578866
+73,Parrallax,Art,Artwork,Ari Purhonen,"47 Wurundjeri Way, DOCKLANDS",Artist: Ari Purhonen,-37.8196059887556,144.951325455868
+74,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8186666064737,144.974100167285
+75,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8186882333343,144.974128540287
+76,"Another View, Site 1",Art,Artwork,Ray Thomas,"152 Spring Street, EAST MELBOURNE",Artist: Ray Thomas,-37.8112942929369,144.973168986334
+77,Boy and Pelican,Art,Artwork,William Leslie Bowles,"84 Clarendon Street, EAST MELBOURNE",Artist: William Leslie Bowles,-37.8137675376712,144.982771754404
+78,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200541369817,144.959680160075
+79,Queen Victoria Memorial,Monument,Artwork,James White,"Residence, Alexandra Gardens, Alexandra Avenue, MELBOURNE",Artist: James White,-37.8218411817137,144.972479044613
+80,Dinny O'Hearn Fountain,Fountain,Artwork,unknown,"331 Lygon Street, CARLTON",Artist: unknown,-37.7975991142625,144.967306467399
+81,Blowhole,Art,Artwork,Duncan Stemler,"15 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219308131053,144.946798545611
+82,Separation Memorial,Monument,Artwork,unknown,"401 King Street, WEST MELBOURNE",Artist: unknown,-37.810695135969,144.953685908935
+83,Sundial,Art,Artwork,unknown,"392 William Street, MELBOURNE",Artist: unknown,-37.8103161768399,144.954937553695
+84,Threaded Field,Art,Artwork,Simon Perry,"689 La Trobe Street, DOCKLANDS",Artist: Simon Perry,-37.8154836225539,144.946712125445
+85,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.820111630197,144.959404150284
+86,Horse Hitching Post,Art,Artwork,unknown,"2 Spring Street, EAST MELBOURNE",Artist: unknown,-37.8150299769363,144.974931527616
+87,Lynch's Bridge Mosaic Mural,Art,Artwork,Elizabeth MacKinnon,"Epsom Road Underpass, KENSINGTON",Artist: Elizabeth MacKinnon,-37.7902053576258,144.92393918587
+88,Reed Vessel,Art,Artwork,Virginia King,"67 Harbour Esplanade, DOCKLANDS",Artist: Virginia King,-37.8202323424168,144.946325127609
+89,Burke and Wills Monument,Monument,Artwork,Charles Summers,"84 Swanston Street, MELBOURNE",Artist: Charles Summers,-37.8156337321238,144.966703993713
+90,Peter Pan,Art,Artwork,Paul Montford,"Melbourne Zoological Gardens, Elliott Avenue, PARKVILLE",Artist: Paul Montford,-37.784773009033,144.95236482558
+91,Grollo Fountain,Fountain,Artwork,unknown,"169 Rathdowne Street, CARLTON",Artist: unknown,-37.8031427973572,144.969874326021
+92,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.8185954753426,144.971808963839
+93,Constellation,Art,Artwork,Bruce Armstrong and Geoffrey Bartlett,"399 Flinders Street, MELBOURNE",Artist: Bruce Armstrong and Geoffrey Bartlett,-37.8201898206677,144.960789659507
+94,Personal Islands,Art,Artwork,Robert Jacks,"201 Swanston Street, MELBOURNE",Artist: Robert Jacks,-37.812954066493504,144.965264917067
+95,Ned and Dan,Art,Artwork,Alexander Knox,"20 Doepel Way, DOCKLANDS",Artist: Alexander Knox,-37.8149351757693,144.940308036389
+96,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201019944052,144.959452353426
+97,Hotham Hill Seat,Art,Artwork,"Bernice McPherson, Di Christensen and Craig Perry",76 Canning Street,"Artist: Bernice McPherson, Di Christensen and Craig Perry",-37.7949351874639,144.940340735749
+98,Island Wave,Art,Artwork,Lisa Young,"404 Queen Street, MELBOURNE",Artist: Lisa Young,-37.809326383142,144.958057203226
+99,Walk of Stars,Art,Artwork,Peter Cortlett and Jamie Cooper,"435 Docklands Drive, DOCKLANDS",Artist: Peter Cortlett and Jamie Cooper,-37.8152982442351,144.938823236515
+100,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201547396011,144.959252201884
+101,Sir John Monash,Monument,Artwork,William Leslie Bowles,"270 St Kilda Road, SOUTHBANK",Artist: William Leslie Bowles,-37.8267733497848,144.97275207638
+102,Within Three Worlds,Art,Artwork,Loretta Quinn,"684 Park Street, CARLTON NORTH",Artist: Loretta Quinn,-37.7788688464994,144.961128357193
+103,Motorcycle,Monument,Artwork,unknown,"10 Wellington Parade, EAST MELBOURNE",Artist: unknown,-37.8170400389729,144.989581102887
+104,Blowhole,Art,Artwork,Duncan Stemler,"13 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8220182164578,144.946871022845
+105,Bandstand,Art,Artwork,George Dodd,"200 Little Collins Street, MELBOURNE",Artist: George Dodd,-37.8140548689972,144.96733868317
+106,Coat of Arms,Art,Artwork,City of Melbourne,"102 Swanston Street, MELBOURNE",Artist: City of Melbourne,-37.815081401373,144.966458869013
+107,Blowhole,Art,Artwork,Duncan Stemler,"15 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8218628257359,144.947009412249
+108,John Batman Memorial (2),Monument,Artwork,Stanley Hammond,"443 Collins Street, MELBOURNE",Artist: Stanley Hammond,-37.8176597509552,144.959772957148
+109,Lake Waterfall,Art,Artwork,unknown,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: unknown,-37.822086065767,144.971811018826
+110,Sir William John Clarke,Monument,Artwork,Edgar Bertram Mackennal,"18 Spring Street, EAST MELBOURNE",Artist: Edgar Bertram Mackennal,-37.8136729461963,144.97434487547
+111,Water Children,Art,Artwork,John Edward Robinson,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: John Edward Robinson,-37.8221241223436,144.970661980986
+112,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200614090425,144.959718171092
+113,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200830248455,144.959725218101
+114,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201002457889,144.959733080966
+115,Within Three Worlds,Art,Artwork,Loretta Quinn,"684 Park Street, CARLTON NORTH",Artist: Loretta Quinn,-37.7789311799623,144.961158146237
+116,Sir Thomas Blamey Memorial,Monument,Artwork,Raymond B. Ewers,"262 St Kilda Road, SOUTHBANK",Artist: Raymond B. Ewers,-37.8263011410214,144.972818912121
+117,Aurora,Art,Artwork,Geoffrey Bartlett,"96 Harbour Esplanade, DOCKLANDS",Artist: Geoffrey Bartlett,-37.8186937927645,144.946856332947
+118,Australia Today and Tomorrow,Art,Artwork,Karl Duldig,"152 Clarendon Street, EAST MELBOURNE",Artist: Karl Duldig,-37.8118220481066,144.982657048965
+119,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8186610069437,144.97413082954
+120,Feng Shui,Art,Artwork,Guan Wei,"698 Collins Street, DOCKLANDS",Artist: Guan Wei,-37.8198227493892,144.951104886543
+121,Grant's Fountain,Fountain,Artwork,unknown,"353 Exhibition Street, MELBOURNE",Artist: unknown,-37.8074703867589,144.968593306036
+122,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201003379632,144.959547579868
+123,Grey Street Fountain,Fountain,Artwork,unknown,"162 Clarendon Street, EAST MELBOURNE",Artist: unknown,-37.8115435409616,144.982950898766
+124,Boy and Urn,Fountain,Artwork,unknown,"4 Lansdowne Street, EAST MELBOURNE",Artist: unknown,-37.8121217645873,144.97970321858
+125,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187023628084,144.974201916576
+126,Conservatory Fountain,Fountain,Artwork,unknown,"Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: unknown,-37.8138743431045,144.978595506099
+127,Blowhole,Art,Artwork,Duncan Stemler,"13 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219853561923,144.946774675143
+128,Art Wall,Art,Artwork,Peter D. Cole,"156 Harbour Esplanade, DOCKLANDS",Artist: Peter D. Cole,-37.8158205285983,144.946136474106
+129,Art Wall,Art,Artwork,Peter D. Cole,"160 Harbour Esplanade, DOCKLANDS",Artist: Peter D. Cole,-37.8156948270259,144.946202651563
+130,IOU,Art,Artwork,Mikala Dwyer,"9 Waterview Walk, DOCKLANDS",Artist: Mikala Dwyer,-37.8200830017644,144.947894374833
+131,Weathervanes,Art,Artwork,Daniel Jenkins,"178 Swanston Street, MELBOURNE",Artist: Daniel Jenkins,-37.8135755457342,144.965751391423
+132,Weathervanes,Art,Artwork,Daniel Jenkins,"271 Bourke Street, MELBOURNE",Artist: Daniel Jenkins,-37.8136266014549,144.965579210749
+133,Outside Inside Out,Art,Artwork,Matthew McCarthy,"27 Caravel Lane, DOCKLANDS",Artist: Matthew McCarthy,-37.814359230579,144.941130138162
+134,Man with the Donkey,Monument,Artwork,Wallace Anderson,"Shrine Of Remembrance Reserve, St Kilda Road, MELBOURNE",Artist: Wallace Anderson,-37.8294820404839,144.973858477761
+135,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8202194220305,144.959168439493
+136,Marquis of Linlithgow,Monument,Artwork,William Birnie Rhind,"268 St Kilda Road, SOUTHBANK",Artist: William Birnie Rhind,-37.8266640358872,144.971916610826
+137,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.820084055671,144.959593881825
+138,Edward George Honey Memorial,Monument,Artwork,unknown,"Old Observatory Site, Birdwood Avenue, MELBOURNE",Artist: unknown,-37.8297554405406,144.974419726206
+139,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8151070586048,144.941546516146
+140,"Another View, Site 17",Art,Artwork,Ray Thomas,"154 Collins Street, MELBOURNE",Artist: Ray Thomas,-37.8148051249324,144.968381003481
+141,Ned and Dan,Art,Artwork,Alexander Knox,"41 Caravel Lane, DOCKLANDS",Artist: Alexander Knox,-37.81464277494,144.940402722846
+142,HeartLand,Art,Artwork,Karen Casey,"52 River Esplanade, DOCKLANDS",Artist: Karen Casey,-37.8243371974094,144.947619116755
+143,Georges Fountain,Fountain,Artwork,Peter Staughton,"152 Collins Street, MELBOURNE",Artist: Peter Staughton,-37.8147653368517,144.968373912562
+144,Constellation,Art,Artwork,Bruce Armstrong and Geoffrey Bartlett,"469 Flinders Street, MELBOURNE",Artist: Bruce Armstrong and Geoffrey Bartlett,-37.8202999349125,144.960534464342
+145,Eagle,Art,Artwork,Bruce Armstrong,"22 Wurundjeri Way, DOCKLANDS",Artist: Bruce Armstrong,-37.8207247436456,144.952391322514
+146,Model Tudor Village,Art,Artwork,Edgar Wilson,"Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: Edgar Wilson,-37.8132572520671,144.981012379899
+147,Chinese Lion Guardians,Art,Artwork,unknown,"Cohen Pl, CHINATOWN",Artist: unknown,-37.8112537359422,144.969347727216
+148,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200950553396,144.95952896712
+149,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8186973319473,144.974158800684
+150,William Ievers Senior Memorial Drinking Fountain,Monument,Artwork,Charles Douglas Richardson,"155 Lygon Street, CARLTON",Artist: Charles Douglas Richardson,-37.8028341939653,144.966385536842
+151,Apollo Belvedere,Art,Artwork,unknown,"90 St Kilda Road, SOUTHBANK",Artist: unknown,-37.8210593434182,144.969757432433
+152,Constellation,Art,Artwork,Bruce Armstrong and Geoffrey Bartlett,"469 Flinders Street, MELBOURNE",Artist: Bruce Armstrong and Geoffrey Bartlett,-37.8202460956887,144.960662536874
+153,Painted Poles,Art,Artwork,Maree Clarke and Sonja Hodge,"78 Swanston Street, MELBOURNE",Artist: Maree Clarke and Sonja Hodge,-37.815760994936,144.966773537312
+154,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187182202074,144.974179856228
+155,George Hawkins Ievers Memorial Drinking Fountain,Monument,Artwork,Charles Douglas Richardson,"147 Royal Parade, PARKVILLE",Artist: Charles Douglas Richardson,-37.7921729538839,144.958090253028
+156,IOU,Art,Artwork,Mikala Dwyer,"7 Waterview Walk, DOCKLANDS",Artist: Mikala Dwyer,-37.820112083979,144.947923460104
+157,Ned and Dan,Art,Artwork,Alexander Knox,"16 Doepel Way, DOCKLANDS",Artist: Alexander Knox,-37.8148030334672,144.940223820648
+158,Diana and the Hounds,Art,Artwork,Sculptor William Leslie Bowles; founder A.B. Brunton,"Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: Sculptor William Leslie Bowles; founder A.B. Brunton,-37.8143067586398,144.978499373084
+159,Pioneer Women's Memorial,Monument,Artwork,Hugh Linaker,"Kings Domain, Alexandra Avenue, MELBOURNE",Artist: Hugh Linaker,-37.8251147378564,144.976076213311
+160,Painted Poles,Art,Artwork,Maree Clarke and Sonja Hodge,"78 Swanston Street, MELBOURNE",Artist: Maree Clarke and Sonja Hodge,-37.8157410618987,144.966836246828
+161,Eight Hour Day Memorial,Monument,Artwork,Percival Ball (?),"399 Russell Street, MELBOURNE",Artist: Percival Ball (?),-37.8071550195592,144.965588387005
+162,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.8185872210924,144.971784281509
+163,Australian Hellenic War Memorial,Monument,Artwork,Evangelos Sakaris; RBA Architects and Conservation Consultants,"Kings Domain, Birdwood Ave, MELBOURNE",Artist: Evangelos Sakaris; RBA Architects and Conservation Consultants,-37.8272124550956,144.972973880253
+164,Blowhole,Art,Artwork,Duncan Stemler,"15 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219335169736,144.946938744265
+165,Shoal Fly By,Art,Artwork,Cat McCleod and Michael Bellemo,"125 Harbour Esplanade, DOCKLANDS",Artist: Cat McCleod and Michael Bellemo,-37.8176052348949,144.945539402201
+166,Larry LaTrobe,Art,Artwork,Pamela Irving,"215 Collins Street, MELBOURNE",Artist: Pamela Irving,-37.8155485668529,144.966892078324
+167,Silence,Art,Artwork,Adrian Mauriks,"45 Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8151113421446,144.941618390681
+168,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8151345502614,144.941464635494
+169,Domed Drinking Fountain,Art,Artwork,unknown,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: unknown,-37.8212404231762,144.970769495267
+170,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201609405995,144.95922840946
+171,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201167536871,144.959381777078
+172,Westgarth Drinking Fountain,Art,Artwork,Alexander McDonald & Co,"9 Nicholson Street, CARLTON",Artist: Alexander McDonald & Co,-37.8050913081625,144.973417274498
+173,Port Phillip Monument,Art,Artwork,unknown,"178 Sims Street, WEST MELBOURNE",Artist: unknown,-37.8056957854241,144.907291041632
+174,Bird Panels,Art,Artwork,Di Christensen and Bernice McPherson,76 Canning Street,Artist: Di Christensen and Bernice McPherson,-37.7953526839703,144.940687314302
+175,Blowhole,Art,Artwork,Duncan Stemler,"15 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219107218802,144.946765134735
+176,Threaded Field,Art,Artwork,Simon Perry,"687 La Trobe Street, DOCKLANDS",Artist: Simon Perry,-37.8155239604994,144.946828976445
+177,Blowhole,Art,Artwork,Duncan Stemler,"13 Harbour Esplanade, DOCKLANDS",Artist: Duncan Stemler,-37.8219554500409,144.947041997573
+178,Tilly Aston Bell,Monument,Artwork,Anton Hasell,"Kings Domain, Alexandra Avenue, MELBOURNE",Artist: Anton Hasell,-37.8253717117323,144.975900201821
+179,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.815142895306,144.941571658474
+180,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187745168339,144.974175613725
+181,The Pathfinder,Art,Artwork,John Edward Robinson,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: John Edward Robinson,-37.8220280738117,144.970355228248
+182,Clayton Reserve Drinking Fountain,Fountain,Artwork,unknown,"241 Macaulay Road, NORTH MELBOURNE",Artist: unknown,-37.7956635739188,144.938934811008
+183,Farnex Hercules,Art,Artwork,unknown,"90 St Kilda Road, SOUTHBANK",Artist: unknown,-37.8211093204271,144.969673137809
+184,Bali Memorial,Fountain,Artwork,Unknown,"Lincoln Square, Swanston Street, CARLTON",Artist: Unknown,-37.8024246248361,144.963256124373
+185,Exhibition Fountain,Fountain,Artwork,Josef Hochgurtel,"9 Nicholson Street, CARLTON",Artist: Josef Hochgurtel,-37.805456726498,144.971368298725
+186,River God Fountain,Fountain,Artwork,Charles Summers,"304 Albert Street, EAST MELBOURNE",Artist: Charles Summers,-37.8104167138709,144.980882423414
+187,Reynold's Reserve Drinking Fountain,Art,Artwork,unknown,"Princes Park, Royal Parade, CARLTON NORTH",Artist: unknown,-37.7836612081103,144.960004054347
+188,James C. Roberts,Monument,Artwork,unknown,"4 The Avenue, PARKVILLE",Artist: unknown,-37.7891381500076,144.957053809565
+189,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150889597275,144.941472613193
+190,The Genie,Art,Artwork,Sculptor Tom Bass; founder F.J. & I. Lemon,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: Sculptor Tom Bass; founder F.J. & I. Lemon,-37.8214877401729,144.971194700662
+191,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.8185907034456,144.971834942502
+192,Threaded Field,Art,Artwork,Simon Perry,"750 Bourke Street, DOCKLANDS",Artist: Simon Perry,-37.8179724438437,144.947887016093
+193,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201325090472,144.959336879083
+194,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200555636082,144.959698879153
+195,Temple of the Winds,Art,Artwork,Thomas Jones & Co,"116 Clarendon Street, EAST MELBOURNE",Artist: Thomas Jones & Co,-37.8128096374869,144.981735857931
+196,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.8185914278651,144.971866175309
+197,Lady Janet Clarke Memorial,Monument,Artwork,Herbert Black,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: Herbert Black,-37.8223354912272,144.971835332477
+198,French Fountain,Fountain,Artwork,unknown,"9 Nicholson Street, CARLTON",Artist: unknown,-37.8049009757854,144.972849834667
+199,IOU,Art,Artwork,Mikala Dwyer,"7 Waterview Walk, DOCKLANDS",Artist: Mikala Dwyer,-37.8201338075104,144.947948917363
+200,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201043033663,144.959426584028
+201,Walker Fountain,Fountain,Artwork,"Mobelt, Digregorio & Associates","210 St Kilda Road, SOUTHBANK","Artist: Mobelt, Digregorio & Associates",-37.8235489328706,144.970827540478
+202,The Travellers,Art,Artwork,Artist Nadim Karam; manufacturer Arup Engineering,"Sandridge Bridge, SOUTHBANK",Artist: Artist Nadim Karam; manufacturer Arup Engineering,-37.8206998343058,144.962209921997
+203,Macpherson Robertson Fountain,Fountain,Artwork,Designer Philip Hudson; sculptor Paul Montford,"2 Domain Road, MELBOURNE",Artist: Designer Philip Hudson; sculptor Paul Montford,-37.8323774569183,144.972934293353
+204,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200608408543,144.959653574985
+205,Car Nuggets,Art,Artwork,Patricia Piccinini,"15 Batmans Hill Drive, DOCKLANDS",Artist: Patricia Piccinini,-37.8217384627114,144.949169769731
+206,Car Nuggets,Art,Artwork,Patricia Piccinini,"15 Batmans Hill Drive, DOCKLANDS",Artist: Patricia Piccinini,-37.8217244747982,144.949168740276
+207,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201046430242,144.959477986287
+208,Edmund Fitzgibbon Memorial,Monument,Artwork,James White,"208 St Kilda Road, SOUTHBANK",Artist: James White,-37.8236122113264,144.970418561306
+209,Threaded Field,Art,Artwork,Simon Perry,"687 La Trobe Street, DOCKLANDS",Artist: Simon Perry,-37.8153623400158,144.946876084269
+210,The Public Purse,Art,Artwork,Simon Perry,"348 Bourke Street, MELBOURNE",Artist: Simon Perry,-37.8140976855607,144.963400769342
+211,Stapley Memorial Drinking Fountain,Monument,Artwork,unknown,"Birrarung Marr, Batman Avenue, MELBOURNE",Artist: unknown,-37.8189109575006,144.973021274734
+212,Three Businessmen Who Brought Their Own Lunch,Art,Artwork,Alison Weaver and Paul Quinn,"173 Swanston Street, MELBOURNE",Artist: Alison Weaver and Paul Quinn,-37.8136854004532,144.965574539781
+213,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8200953335,144.959704036718
+214,General Charles Gordon Memorial,Monument,Artwork,Sculptor Hamo Thornycroft; founder J. Moore,"74 Spring Street, EAST MELBOURNE",Artist: Sculptor Hamo Thornycroft; founder J. Moore,-37.8127260372375,144.973942531552
+215,Stanford Fountain,Fountain,Artwork,William Stanford,"88 Spring Street, EAST MELBOURNE",Artist: William Stanford,-37.8124342889143,144.973955482708
+216,"A History Apparatus - Vessel, Craft & Beacon",Art,Artwork,Chris Reynolds,"147 Russell Street, MELBOURNE",Artist: Chris Reynolds,-37.8130493620338,144.968210969062
+217,Burke and Wills Cairn,Monument,Artwork,unknown,"6 The Avenue, PARKVILLE",Artist: unknown,-37.7889280817664,144.956058081184
+218,Lie of the Land,Art,Artwork,Fiona Foley and Chris Knowles,"IMAX Theatre, Rathdowne Street, CARLTON",Artist: Fiona Foley and Chris Knowles,-37.8037692024891,144.972134286246
+219,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201540531024,144.959283942501
+220,Silence,Art,Artwork,Adrian Mauriks,"50 Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8150603527985,144.941593770341
+221,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.8151593795233,144.941509412449
+222,The Echo,Art,Artwork,Edward Ginger,"219 Swanston Street, MELBOURNE",Artist: Edward Ginger,-37.812705684744,144.965153944033
+223,Silence,Art,Artwork,Adrian Mauriks,"55B Newquay Promenade, DOCKLANDS",Artist: Adrian Mauriks,-37.81508276715,144.941482783904
+224,Maxims of Behaviour,Art,Artwork,Alexander Knox,"Royal Mail House, cnr Bourke & Swanston Sts, MELBOURNE",Artist: Alexander Knox,-37.8136024551412,144.965808885624
+225,Within Three Worlds,Art,Artwork,Loretta Quinn,"684 Park Street, CARLTON NORTH",Artist: Loretta Quinn,-37.7788627462445,144.961112677408
+226,John Batman Memorial (1),Monument,Artwork,J.W. Brown,"439 Queen Street, MELBOURNE",Artist: J.W. Brown,-37.8081354860573,144.957645863417
+227,Car Nuggets,Art,Artwork,Patricia Piccinini,"15 Batmans Hill Drive, DOCKLANDS",Artist: Patricia Piccinini,-37.8217401147159,144.949142099572
+228,Coles Fountain,Fountain,Artwork,Robert Woodward,"517 Albert Street, EAST MELBOURNE",Artist: Robert Woodward,-37.8097706189194,144.973483976518
+229,Coat of Arms,Art,Artwork,City of Melbourne,"104 Swanston Street, MELBOURNE",Artist: City of Melbourne,-37.8150481212229,144.966444170774
+230,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187157253887,144.974141691478
+231,The Phoenix,Art,Artwork,Yrsa Von Leister,"Queen Victoria Gardens, St Kilda Road, MELBOURNE",Artist: Yrsa Von Leister,-37.8221532701427,144.97095067818
+232,Bust of Sir Samuel Gillott,Art,Artwork,Charles Douglas Richardson,"37 Collins Street, MELBOURNE",Artist: Charles Douglas Richardson,-37.8137257454688,144.972615474
+233,Spray Lake,Fountain,Artwork,unknown,46 Nicholson Street,Artist: unknown,-37.8058096647951,144.972528813493
+234,Anchor,Art,Artwork,Neil Dawson,"760 Bourke Street, DOCKLANDS",Artist: Neil Dawson,-37.8182323264616,144.947444643152
+235,Wind Contrivance,Art,Artwork,Pauline Fraser,"64 Therry Street, MELBOURNE",Artist: Pauline Fraser,-37.8072519167223,144.959230533317
+236,Grotto Waterfall,Art,Artwork,unknown,"Kings Domain, Alexandra Avenue, MELBOURNE",Artist: unknown,-37.8256393190193,144.976761073829
+237,Black Swan Memorial Drinking Fountain,Monument,Artwork,Raymond B. Ewers,"Alexandra Gardens, St Kilda Road, MELBOURNE",Artist: Raymond B. Ewers,-37.8195705617737,144.971824407255
+238,Captain Cook,Monument,Artwork,Marc Clark,"Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: Marc Clark,-37.8145792919449,144.979494361804
+239,Statue of Meditation,Art,Artwork,Robert Delandere,"Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE",Artist: Robert Delandere,-37.813953837555,144.978577485077
+240,Federation Bells,Art,Artwork,Designers Neil McLachlan and Anton Hasell,"Birrarung Marr, MELBOURNE",Artist: Designers Neil McLachlan and Anton Hasell,-37.8187404835153,144.974102781582
+241,Councillor William Cook Memorial Drinking Fountain,Monument,Artwork,Charles Douglas Richardson,266 Macpherson Street,Artist: Charles Douglas Richardson,-37.7852874613137,144.966190055728
+242,King George V,Monument,Artwork,Sculptor William Leslie Bowles; founder John Galizia; stonemason G.B. Edwards & Sons,"Kings Domain, Alexandra Avenue, MELBOURNE",Artist: Sculptor William Leslie Bowles; founder John Galizia; stonemason G.B. Edwards & Sons,-37.8242726516388,144.973213430025
+243,Threaded Field,Art,Artwork,Simon Perry,"685 La Trobe Street, DOCKLANDS",Artist: Simon Perry,-37.815324414746,144.9470729338
+244,Pioneer Monument,Monument,Artwork,Samuel Craven,"395 King Street, WEST MELBOURNE",Artist: Samuel Craven,-37.810801327848,144.953954497374
+245,Birrarung Wilam,Art,Artwork,"Vicki Couzens, Lee Darroch and Treahna Hamm","Birrarung Marr, MELBOURNE","Artist: Vicki Couzens, Lee Darroch and Treahna Hamm",-37.8185922758306,144.971796362269
+246,Bali Memorial,Fountain,Artwork,Unknown,"Lincoln Square, Swanston Street, CARLTON",Artist: Unknown,-37.8024840905196,144.963242826387
+247,Hotham Hill Paving Inlay,Art,Artwork,Bernice McPherson,76 Canning Street,Artist: Bernice McPherson,-37.7949047942895,144.940383521588
+248,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.820149525359,144.959318134551
+249,Miraggio,Art,Artwork,Pino Conte,"Sidney Myer Music Bowl, Alexandra Avenue, MELBOURNE",Artist: Pino Conte,-37.8240134693642,144.974151500782
+250,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.8201736797154,144.959200268537
+251,Ned and Dan,Art,Artwork,Alexander Knox,"21 Rakaia Way, DOCKLANDS",Artist: Alexander Knox,-37.8146994633064,144.940838425061
+252,Dairy Hall Window,Art,Artwork,Artist Bernice McPherson; architect Craig Perry,"62 Therry Street, MELBOURNE",Artist: Artist Bernice McPherson; architect Craig Perry,-37.8072067768463,144.959271667297
+253,Pastor Sir Doug and Lady Gladys Nicholls,Monument,Artwork,Louis Laumen,"Parliament Gardens, EAST MELBOURNE",Artist: Louis Laumen,-37.8100230422747,144.973642124927
+254,Scar - A Stolen Vision,Art,Artwork,"Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm","Enterprize Park, MELBOURNE","Artist: Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm",-37.820097951228,144.959505265904
+255,Painted Poles,Art,Artwork,Jennifer McCarthy,"308 Swanston Street, MELBOURNE",Artist: Jennifer McCarthy,-37.810347145096,144.964280610813
+256,John Pascoe Fawkner,Monument,Artwork,Michael Meszaros,"437 Collins Street, MELBOURNE",Artist: Michael Meszaros,-37.8176770967418,144.959995275694
+257,Photo art billboard,Art,Artwork,Various artists,"56 Lorimer Street, DOCKLANDS",Artist: Various artists,-37.8249065059188,144.947426953214
+258,Railway Viewing Platform,Art,Artwork,Designer Bernice McPherson; architects Craig Perry and Peter Dann,"90 Railway Place, WEST MELBOURNE",Artist: Designer Bernice McPherson; architects Craig Perry and Peter Dann,-37.8088169283775,144.943688304136
+259,R.J. & F.G.J. Hardy Memorial Drinking Fountain,Monument,Artwork,unknown,463 Lygon Street,Artist: unknown,-37.7855912646095,144.96931423372
+260,Adam Lindsay Gordan Memorial,Monument,Artwork,Paul Montford,"96 Spring Street, EAST MELBOURNE",Artist: Paul Montford,-37.8123635338167,144.97374504876
+261,Angel,Art,Artwork,Deborah Halpern,Birrarung Marr,Artist: Deborah Halpern,-37.8189542313538,144.972959186532
+262,Black Swan Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8195705744424,144.971824436445
+263,William Ievers (Jnr) Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7982578256186,144.97056462845
+264,Beyond the Ocean of Existence,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8164236255068,144.967061521425
+265,Temple of the Winds,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8128096545722,144.981735855762
+266,Boy on a Turtle,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8143892942827,144.979910185425
+267,Tianjin Garden Chinese Lion Guardians,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8112537328974,144.969347694358
+268,Elliot Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7820500448944,144.956966688817
+269,Larry La Trobe,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8155485415339,144.966892073339
+270,Lake Waterfall,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8220860665895,144.971811014259
+271,Blowhole,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8218628591026,144.947009361906
+272,Dairy Hall Window,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8072067342084,144.95927167699
+273,Duke & Duchess of York Memorial [also known as Temperence],Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8066292170365,144.959908875141
+274,Man with the Donkey,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8294820320636,144.973858485945
+275,Walker Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8235489421227,144.970827554425
+276,Apollo Belvedere,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8210593800945,144.969757416659
+277,The Genie,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8214877018124,144.971194723297
+278,Bandstand,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8118220680303,144.98265705467
+279,Sir William Brunton Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7893037541819,144.972178908201
+280,The Public Purse,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8140976922587,144.963400791877
+281,Another View Site 17,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8148050876298,144.968381035174
+282,Macpherson-Robertson Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8323774586129,144.972934260924
+283,Councillor William Cook Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7852874728369,144.966190018508
+284,Victorian Rowing Association World War 1 Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8217592722394,144.974772591697
+285,Henderson Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8033418230886,144.949739174347
+286,Spray Lake,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8058096513433,144.972528791144
+287,The Dolphin Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8118884444692,144.980015837679
+288,The Court Favourite,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8102639884104,144.955039022542
+289,Grollo Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8031427528281,144.969874382893
+290,Pastor Sir Doug Nicholls and Lady Gladys Nicholls,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.810023077877,144.973642112169
+291,Dinny O'Hern Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7975991057745,144.967306523849
+292,Miraggio [also known as Seated Figure],Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.82401351439,144.974151551243
+293,Faultline,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8211525147875,144.96423807327
+294,William Ievers (Snr) Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8028341907642,144.966385560213
+295,Adam Lindsay Gordon Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8123634964432,144.973745102602
+296,Boy and Pelican,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8137675152884,144.982771762965
+297,Janet Lady Clarke Memorial Sculpture,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8223354801052,144.971835314604
+298,French Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8049009334589,144.972849862515
+299,John Batman Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8081355068188,144.957645917366
+300,John F. Kennedy Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8136597452278,144.976354471097
+301,Coat of Arms,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8151041704989,144.96646930561
+302,Tilly Aston Bell,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8253717421153,144.975900160659
+303,Zoo Paving,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.782561322013,144.953293930765
+304,Burke & Wills Cairn,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7889281178088,144.956058106876
+305,Ceremony and Vehicle for Conveying Spirit,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8136957631715,144.968512999898
+306,Widow and Children,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8302819071543,144.974339825095
+307,Sir John Monash,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8267733389745,144.972752128938
+308,Time and Tide,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8143983824308,144.966250918798
+309,John Mockridge Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8155223709634,144.966994346849
+310,Separation Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8106951235195,144.953685866683
+311,Bali Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8024841102707,144.963242841603
+312,General Charles Gordon Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8127260123213,144.973942497587
+313,Reed Vessel,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8202323296824,144.946325095017
+314,Nurse Edith Cavell Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.827987844927,144.973699167888
+315,Reynold's Reserve Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7836611910613,144.960004006558
+316,Georges Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8147653135597,144.968373946711
+317,Another View Site 8,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8194133574865,144.960198663587
+318,Robert Burns Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8143735830792,144.974719996297
+319,Speakers Corner,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8200825571427,144.975716690315
+320,Vault,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.826071391918,144.967732716827
+321,Sundial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.810316205825,144.954937510299
+322,Commonwealth Games Aquatic Sculptures - Eels,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7966290758514,144.924306747344
+323,Coles Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8097706399894,144.973483970263
+324,World War 1 Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7915502247943,144.958086476511
+325,A History Apparatus - Vessel Craft & Beacon,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8130493644912,144.968210954796
+326,Diana and the Hounds,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8143067766605,144.978499425414
+327,River God Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8104167228785,144.980882423169
+328,Architectural Fragment,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8098275435281,144.964046088207
+329,King George V,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8242726781817,144.973213427595
+330,Railway Viewing Platform,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8088169287784,144.943688301286
+331,Lynch's Bridge Mosaic Mural,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7902053433568,144.923939187972
+332,Domed Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8212403900153,144.970769453573
+333,South African War Memorial (Memorial to Fallen Soldiers),Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8259414540802,144.97185679034
+334,Sir Samuel Gillott,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8137257364725,144.972615422561
+335,Painted Poles,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8157562938546,144.966810376908
+336,Bird Panels,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7953526683028,144.940687345967
+337,Passage,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8074524296746,144.958306716284
+338,Silence,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8151070942136,144.94154651686
+339,Captain Matthew Flinders Statue,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8169633057911,144.967487592771
+340,"Three Businessmen Who Brought Their Own Lunch: Batman, Swanston & Hoddle",Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.81368540194,144.965574495439
+341,Waterfall Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.813717094785,144.980140702756
+342,Horse Hitching Post,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8150299439513,144.974931522269
+343,Scar: A Stolen Vision,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8201016644485,144.959454354553
+344,Stapley Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8189109755954,144.973021226526
+345,The Travellers,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8200793788538,144.962960549385
+346,Personal Islands,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8129540652895,144.96526492562
+347,Stanford Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8124342540301,144.973955471734
+348,Wind Contrivance,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8072518916019,144.959230565812
+349,The Phoenix,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8221532497782,144.970950646927
+350,Aurora,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8186938302442,144.946856337589
+351,Lie of the Land,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8037691686334,144.972134256506
+352,Motorcyclist Harold Parsons Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8170400833235,144.98958111418
+353,Edmund Fitzgibbon Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8236121838048,144.97041853309
+354,Federation Bells,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8186665820053,144.974100198626
+355,Conservatory Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8138743287314,144.978595508763
+356,The Echo,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8127056758346,144.965153949957
+357,Koorie Mural,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8069939381431,144.963053961495
+358,Westgarth Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8050912969792,144.973417331594
+359,Boer War Monument,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8333920555902,144.972246673222
+360,City Living,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8114750568851,144.953165443927
+361,Constellation,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8202460577394,144.960662531102
+362,Within Three Worlds,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7788682210743,144.961115185521
+363,Captain Cook,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.814579247299,144.979494359613
+364,Signature Work,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.819243144249,144.947246789008
+365,People's Path,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8110235138977,144.978389174842
+366,Model Tudor Village,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8132572127115,144.981012344621
+367,Sir William John Clarke,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8136729531192,144.974344858809
+368,Fairies Tree,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8134099717816,144.981102238575
+369,Mermaid and Fish,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8138419994948,144.98275871684
+370,King Edward VII Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8226718035411,144.970988249771
+371,Raising the Rattler Pole,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8209006645416,144.954692755363
+372,Edward George Honey Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8297554644672,144.974419781225
+373,The Water Nymph,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8222098042075,144.971335362099
+374,Boy and Urn,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8121218036023,144.979703233987
+375,Another View Site 1,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8112943375038,144.973169010105
+376,Hotham Hill Pavement Inlay,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7949047877064,144.940383505871
+377,Ecophene,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8198056338124,144.963285369515
+378,Mary Gilbert Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8140756775122,144.978560254824
+379,Eel Trap,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8191221578639,144.974075813898
+380,Samuel Mauger Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8082489627974,144.975315343723
+381,Brunton Drinking Fountain West,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8184091013264,144.978855433923
+382,Hotham Hill Seat,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7949352206982,144.940340755268
+383,Australia Today and Tomorrow,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8140548926813,144.967338697856
+384,Children's Lake Waterfall,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8224051515098,144.970643483514
+385,Dr Louis Smith,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8047443091441,144.972452071138
+386,The Pathfinder,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8220280877634,144.970355253427
+387,Argyle Square Piazza,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8024440893138,144.965875284609
+388,Statue of Meditation,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8139538628485,144.978577436109
+389,Brunton Drinking Fountain East,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7893037541819,144.972178908201
+390,Queen Victoria Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8218411871775,144.972479021742
+391,Weathervanes,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8135370446354,144.965640931082
+392,Great Petition,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.811529640687,144.975170291578
+393,Island Wave,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8093264245689,144.958057227641
+394,Australian Hellenic Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8272124256682,144.972973931049
+395,Burke and Wills Monument,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8156336994425,144.96670400597
+396,Victoria Police Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8242417290806,144.970982287968
+397,Eight Hour Day Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8071549943472,144.965588362141
+398,Painted Poles,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8100968903886,144.964165113326
+399,Water Children,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8221241231269,144.970661974148
+400,Maxims of Behaviour,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8136024871974,144.965808843709
+401,Thomas Ferguson Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8015394788479,144.960227248561
+402,James C Roberts Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7891381551832,144.957053770245
+403,Marquis of Linlithgow,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8266640563688,144.971916648894
+404,"Sir Edward ""Weary"" Dunlop",Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8253098033481,144.971594258329
+405,Pioneer Women's Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.825114779701,144.976076236026
+406,Sir Thomas Blamey Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8263011012613,144.972818905824
+407,Grant's Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8074703758618,144.968593327348
+408,Port Philip Monument,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8056957677722,144.907290986476
+409,John Pascoe Fawkner Memorial,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8176770551424,144.959995293311
+410,Cow Up A Tree,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8171223481362,144.945279735113
+411,Grey Street Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8115435006444,144.982950886232
+412,Farnex Hercules,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8211092934829,144.969673116962
+413,R.J. & F.G.J. Hardy Memorial Drinking Fountain|Also Know as Hardy Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7855912778371,144.969314216893
+414,Pioneer Monument,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8108013544726,144.953954525604
+415,Grotto Waterfall,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8256393194989,144.97676107552
+416,George Hawkins Ievers Memorial Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7921729137983,144.958090228013
+417,Peter Pan,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.784772976215,144.952364829892
+418,Birrarung Wilam [Common Ground],Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8185957247729,144.971821698135
+419,Exhibition Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8054567702426,144.971368327059
+420,Electric Supply Box D,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8135248905976,144.965912867161
+421,Resting Place,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.8103721087661,144.964076451277
+422,Fruition,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7895848548551,144.943006771705
+423,Clayton Reserve Drinking Fountain,Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.7956635547352,144.93893479621
+424,John Batman Memorial [2],Memorial/Sculpture,Memorial,NA,NA,Artist: Unknown,-37.817659776023,144.959772999626
