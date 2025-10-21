@@ -14,6 +14,13 @@ library(dplyr)
 library(stringr)
 library(htmltools)
 library(shinyjs)
+library(DT)
+
+# 加载附近设施分析函数
+source("scripts/nearby_facilities_simple.R")
+
+# 加载繁忙时段分析函数
+source("scripts/busy_hours_analysis.R")
 
 # 加载Tableau集成库
 source("tableau-in-shiny-v1.2.R")
@@ -23,8 +30,6 @@ source("tableau-in-shiny-v1.2.R")
 # ==============================================================================
 
 load_data <- function() {
-  cat("正在加载墨尔本数据...\n")
-
   if (!dir.exists("data/processed")) {
     stop("错误：找不到 data/processed 文件夹！\n请先运行: source('scripts/prepare_data.R')")
   }
@@ -40,12 +45,6 @@ load_data <- function() {
     pedestrian = readRDS("data/processed/pedestrian_summary.rds"),
     overview = readRDS("data/processed/overview_stats.rds")
   )
-
-  cat("数据加载完成！\n")
-  cat("  咖啡馆/餐厅:", nrow(data_list$cafes), "\n")
-  cat("  酒吧/酒馆:", nrow(data_list$bars), "\n")
-  cat("  景点 (POIs):", nrow(data_list$pois), "\n")
-  cat("  公共艺术品:", nrow(data_list$artworks), "\n")
 
   return(data_list)
 }
@@ -216,7 +215,7 @@ ui <- dashboardPage(
             div(style = "width: 100%; height: 650px; overflow: auto;",
               tableauPublicViz(
                 id = "overview_dashboard",
-                url = "https://public.tableau.com/views/Overview_17608521837520/overview?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+                url = "https://public.tableau.com/views/Overview-A3/Dashboard1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
                 height = "650px",
                 width = "100%"
               )
@@ -231,26 +230,24 @@ ui <- dashboardPage(
       tabItem(
         tabName = "map",
         h2("探索墨尔本地图"),
-        p("在地图上查看所有景点、餐饮和公共设施。使用左侧的图层控制选择要显示的内容。"),
+        p("在地图上查看所有景点、餐饮和公共设施。点击地图上的任意位置查看1公里内的附近设施。使用左侧的图层控制选择要显示的内容。"),
 
         fluidRow(
           box(
             title = "交互式地图", status = "primary", solidHeader = TRUE, width = 9,
-            leafletOutput("main_map", height = 650)
+            leafletOutput("main_map", height = 500)
           ),
-
+          
           box(
-            title = "位置详情", status = "info", solidHeader = TRUE, width = 3,
-            uiOutput("location_info"),
-            hr(),
-            h4("图例"),
-            div(
-              p(tags$span(style = "color: #e74c3c; font-size: 20px;", "●"), " 文化景点"),
-              p(tags$span(style = "color: #3498db; font-size: 20px;", "●"), " 咖啡馆/餐厅"),
-              p(tags$span(style = "color: #f39c12; font-size: 20px;", "●"), " 酒吧/酒馆"),
-              p(tags$span(style = "color: #9b59b6; font-size: 20px;", "●"), " 公共厕所"),
-              p(tags$span(style = "color: #1abc9c; font-size: 20px;", "●"), " 饮水喷泉")
-            )
+            title = "附近人流时段分析", status = "success", solidHeader = TRUE, width = 3,
+            uiOutput("busy_hours_info")
+          )
+        ),
+        
+        fluidRow(
+          box(
+            title = "附近设施分析", status = "info", solidHeader = TRUE, width = 12,
+            uiOutput("location_info")
           )
         )
       ),
@@ -391,9 +388,25 @@ server <- function(input, output, session) {
 
   # 响应式值
   rv <- reactiveValues(
-    selected_location = NULL
+    selected_location = NULL,
+    nearby_facilities = NULL,
+    click_location = NULL,
+    location_name = "未命名位置",
+    busy_hours_data = NULL
   )
 
+  # 通用繁忙时段分析函数
+  analyze_busy_hours_for_location <- function(lat, lng) {
+    tryCatch({
+      busy_result <- analyze_busy_hours(
+        lat, lng, data$pedestrian, max_distance_km = 1.0
+      )
+      rv$busy_hours_data <- busy_result
+    }, error = function(e) {
+      rv$busy_hours_data <- NULL
+    })
+  }
+  
   # ===========================================================================
   # 欢迎页面 - 信息框
   # ===========================================================================
@@ -568,23 +581,375 @@ server <- function(input, output, session) {
     return(map)
   })
 
+  # 地图标记点击事件监听器
+  observeEvent(input$main_map_marker_click, {
+    marker_click <- input$main_map_marker_click
+    
+    # 更新点击位置
+    rv$click_location <- list(
+      lat = marker_click$lat,
+      lng = marker_click$lng
+    )
+    
+    # 从标记的popup中提取名称
+    if (!is.null(marker_click$id)) {
+      # 根据标记ID获取对应的设施信息
+      marker_id <- marker_click$id
+      
+      # 从不同数据集中查找对应的设施
+      facility_name <- NULL
+      
+      # 检查咖啡馆/餐厅
+      if (grepl("^cafe_", marker_id)) {
+        cafe_id <- as.numeric(gsub("cafe_", "", marker_id))
+        if (cafe_id <= nrow(data$cafes)) {
+          facility_name <- data$cafes$trading_name[cafe_id]
+        }
+      }
+      # 检查酒吧/酒馆
+      else if (grepl("^bar_", marker_id)) {
+        bar_id <- as.numeric(gsub("bar_", "", marker_id))
+        if (bar_id <= nrow(data$bars)) {
+          facility_name <- data$bars$trading_name[bar_id]
+        }
+      }
+      # 检查POI/地标
+      else if (grepl("^poi_", marker_id)) {
+        poi_id <- gsub("poi_", "", marker_id)
+        poi_data <- data$pois %>% filter(poi_id == !!poi_id)
+        if (nrow(poi_data) > 0) {
+          facility_name <- poi_data$name[1]
+        }
+      }
+      
+      # 设置位置名称
+      if (!is.null(facility_name)) {
+        rv$location_name <- facility_name
+      } else {
+        rv$location_name <- paste0("位置 (", round(marker_click$lat, 4), ", ", round(marker_click$lng, 4), ")")
+      }
+    }
+    
+    # 获取附近设施
+    tryCatch({
+      # 加载所有设施数据
+      all_facilities <- load_all_facilities()
+      
+      # 获取500m内的设施
+      nearby <- get_nearby_facilities(
+        marker_click$lat, 
+        marker_click$lng, 
+        all_facilities, 
+        radius_km = 0.5
+      )
+      
+      # 去重：按设施名称和类型去重，保留最近的记录
+      nearby <- nearby %>%
+        group_by(facility_name, facility_type) %>%
+        slice_min(distance, n = 1) %>%
+        ungroup()
+      
+      # 排除自身：如果点击的是设施标记，排除该设施本身
+      if (!is.null(facility_name)) {
+        nearby <- nearby %>%
+          filter(!(facility_name == !!facility_name & distance < 0.01))  # 排除距离小于10米的自身
+      }
+      
+      # 更新响应式值
+      rv$nearby_facilities <- nearby
+      
+    }, error = function(e) {
+      shiny::showNotification(
+        paste0("获取附近设施时出错: ", e$message),
+        type = "error",
+        duration = 5
+      )
+    })
+    
+    # 分析繁忙时段
+    analyze_busy_hours_for_location(marker_click$lat, marker_click$lng)
+  })
+  
+  # 地图空白区域点击事件监听器（作为备用）
+  observeEvent(input$main_map_click, {
+    click <- input$main_map_click
+    
+    # 更新点击位置
+    rv$click_location <- list(
+      lat = click$lat,
+      lng = click$lng
+    )
+    
+    # 使用坐标作为名称
+    rv$location_name <- paste0("位置 (", round(click$lat, 4), ", ", round(click$lng, 4), ")")
+    
+    # 获取附近设施
+    tryCatch({
+      # 加载所有设施数据
+      all_facilities <- load_all_facilities()
+      
+      # 获取500m内的设施
+      nearby <- get_nearby_facilities(
+        click$lat, 
+        click$lng, 
+        all_facilities, 
+        radius_km = 0.5
+      )
+      
+      # 去重：按设施名称和类型去重，保留最近的记录
+      nearby <- nearby %>%
+        group_by(facility_name, facility_type) %>%
+        slice_min(distance, n = 1) %>%
+        ungroup()
+      
+      # 更新响应式值
+      rv$nearby_facilities <- nearby
+      
+    }, error = function(e) {
+      shiny::showNotification(
+        paste0("获取附近设施时出错: ", e$message),
+        type = "error",
+        duration = 5
+      )
+    })
+    
+    # 分析繁忙时段
+    analyze_busy_hours_for_location(click$lat, click$lng)
+  })
+
+
   # 位置信息面板
   output$location_info <- renderUI({
-    if (is.null(rv$selected_location)) {
+    if (is.null(rv$click_location)) {
       div(
+        style = "text-align: center; padding: 40px;",
         icon("info-circle", class = "fa-3x", style = "color: #3c8dbc; display: block; margin: 20px auto;"),
-        p("点击地图上的标记查看详细信息", style = "text-align: center; color: #666;")
+        h4("点击地图上的任意位置查看附近设施", style = "color: #666; margin-top: 20px;"),
+        p("搜索半径: 500米", style = "color: #999; font-size: 14px; margin-top: 10px;")
       )
     } else {
-      loc <- rv$selected_location
-      div(
-        h4(loc$name, style = "color: #3c8dbc;"),
-        p(strong("类别: "), loc$category),
-        if (!is.null(loc$info)) p(loc$info),
-        if (!is.null(loc$address)) p(strong("地址: "), loc$address)
+      # 显示点击位置信息
+      click_info <- div(
+        style = "background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px;",
+        h4("📍 点击位置", style = "color: #3c8dbc; margin-bottom: 15px;"),
+        fluidRow(
+          column(4, 
+            p(strong("位置名称: "), rv$location_name, style = "font-size: 16px; margin-bottom: 5px;")
+          ),
+          column(4,
+            p(strong("纬度: "), round(rv$click_location$lat, 6), style = "font-size: 14px; margin-bottom: 5px;")
+          ),
+          column(4,
+            p(strong("经度: "), round(rv$click_location$lng, 6), style = "font-size: 14px; margin-bottom: 5px;")
+          )
+        )
       )
+      
+      # 显示附近设施
+      if (!is.null(rv$nearby_facilities) && nrow(rv$nearby_facilities) > 0) {
+        # 获取设施类型选项
+        facility_types <- unique(rv$nearby_facilities$facility_type)
+        
+        facilities_info <- div(
+          h4(paste0("🏢 附近设施 (", nrow(rv$nearby_facilities), "个)"), style = "color: #2c3e50; margin-bottom: 20px;"),
+          fluidRow(
+            column(6,
+              selectInput("facility_type_filter", "筛选类型:", 
+                         choices = c("全部" = "all", setNames(facility_types, facility_types)),
+                         selected = "all", width = "100%")
+            ),
+            column(6,
+              selectInput("distance_filter", "距离筛选:", 
+                         choices = c("全部距离" = "all", "0-100m" = "0.1", "100-200m" = "0.2", "200-300m" = "0.3", "300-500m" = "0.5"),
+                         selected = "all", width = "100%")
+            )
+          ),
+          div(
+            style = "margin-top: 20px;",
+            DT::dataTableOutput("nearby_facilities_table")
+          )
+        )
+      } else {
+        facilities_info <- div(
+          style = "text-align: center; padding: 40px;",
+          icon("search", class = "fa-2x", style = "color: #95a5a6; margin-bottom: 15px;"),
+          h4("该位置500m内没有找到设施", style = "color: #666;")
+        )
+      }
+      
+      div(click_info, facilities_info)
     }
   })
+  
+  # 繁忙时段分析面板
+  output$busy_hours_info <- renderUI({
+    if (is.null(rv$busy_hours_data)) {
+      div(
+        style = "text-align: center; padding: 15px;",
+        icon("clock", class = "fa-2x", style = "color: #27ae60; margin-bottom: 10px;"),
+        p("点击地图查看繁忙时段", style = "color: #7f8c8d; font-size: 12px;"),
+        p("将显示该区域的人流高峰时段", style = "color: #95a5a6; font-size: 10px;"),
+        hr(),
+        h6("图例", style = "color: #2c3e50; margin-bottom: 8px;"),
+        div(
+          style = "text-align: left; font-size: 12px;",
+          p(tags$span(style = "color: #e74c3c; font-size: 14px;", "●"), " 文化景点"),
+          p(tags$span(style = "color: #3498db; font-size: 14px;", "●"), " 咖啡馆/餐厅"),
+          p(tags$span(style = "color: #f39c12; font-size: 14px;", "●"), " 酒吧/酒馆"),
+          p(tags$span(style = "color: #9b59b6; font-size: 14px;", "●"), " 公共厕所"),
+          p(tags$span(style = "color: #1abc9c; font-size: 14px;", "●"), " 饮水喷泉")
+        )
+      )
+    } else {
+      busy_data <- rv$busy_hours_data
+      ui_data <- busy_data$ui_data
+      
+      
+      if (is.null(ui_data)) {
+        # 回退到简单显示
+        summary <- busy_data$summary
+        div(
+          style = "padding: 15px;",
+          h5("📊 繁忙时段分析", style = "color: #2c3e50;"),
+          div(
+            style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+            p(strong("高峰时段: "), summary$peak_hour, " (", summary$peak_people, "人)", style = "font-size: 12px; margin-bottom: 5px;"),
+            p(strong("安静时段: "), summary$quiet_hour, " (", summary$quiet_people, "人)", style = "font-size: 12px; margin-bottom: 5px;"),
+            p(strong("平均人流: "), summary$avg_people, "人/小时", style = "font-size: 12px;")
+          ),
+          hr(),
+          h6("图例", style = "color: #2c3e50; margin-bottom: 8px;"),
+          div(
+            style = "text-align: left; font-size: 12px;",
+            p(tags$span(style = "color: #e74c3c; font-size: 14px;", "●"), " 文化景点"),
+            p(tags$span(style = "color: #3498db; font-size: 14px;", "●"), " 咖啡馆/餐厅"),
+            p(tags$span(style = "color: #f39c12; font-size: 14px;", "●"), " 酒吧/酒馆"),
+            p(tags$span(style = "color: #9b59b6; font-size: 14px;", "●"), " 公共厕所"),
+            p(tags$span(style = "color: #1abc9c; font-size: 14px;", "●"), " 饮水喷泉")
+          )
+        )
+      } else {
+        # Google Maps风格的繁忙时段显示
+        div(
+          style = "padding: 10px;",
+          # 繁忙时段条形图
+          div(
+            style = "margin-bottom: 15px;",
+            div(
+              style = "display: flex; align-items: end; height: 40px; gap: 2px;",
+              lapply(1:nrow(ui_data$key_data), function(i) {
+                row <- ui_data$key_data[i,]
+                height <- max(4, row$busy_percentage * 0.3)  # 最小高度4px
+                color <- if (row$busy_percentage > 80) "#e74c3c" 
+                        else if (row$busy_percentage > 60) "#f39c12"
+                        else if (row$busy_percentage > 40) "#f1c40f"
+                        else "#95a5a6"
+                
+                div(
+                  style = paste0("flex: 1; background-color: ", color, "; height: ", height, "px; border-radius: 2px; position: relative; cursor: pointer;"),
+                  title = paste0("时间: ", row$time_label, "\\n人流量: ", round(row$avg_people), "人\\n繁忙程度: ", row$busy_percentage, "%"),
+                  # 时间标签
+                  div(
+                    style = "position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #7f8c8d;",
+                    row$time_label
+                  )
+                )
+              })
+            )
+          ),
+           div(
+           style = "padding: 15px;",
+      
+           div(
+             style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px;",
+             if (!is.null(ui_data)) {
+               list(
+                 p(strong("高峰时段: "), ui_data$peak_hour, " (", ui_data$peak_people, "人)", style = "font-size: 12px; margin-bottom: 5px;"),
+                 p(strong("安静时段: "), ui_data$quiet_hour, " (", ui_data$quiet_people, "人)", style = "font-size: 12px; margin-bottom: 5px;"),
+                 p(strong("平均人流: "), ui_data$avg_people, "人/小时", style = "font-size: 12px;")
+               )
+             } else {
+               list(
+                 p(strong("高峰时段: "), "数据加载中...", style = "font-size: 12px; margin-bottom: 5px;"),
+                 p(strong("安静时段: "), "数据加载中...", style = "font-size: 12px; margin-bottom: 5px;"),
+                 p(strong("平均人流: "), "数据加载中...", style = "font-size: 12px;")
+               )
+             }
+           )
+         ),
+          hr(),
+        h6("图例", style = "color: #2c3e50; margin-bottom: 8px;"),
+        div(
+          style = "text-align: left; font-size: 12px;",
+          p(tags$span(style = "color: #e74c3c; font-size: 14px;", "●"), " 文化景点"),
+          p(tags$span(style = "color: #3498db; font-size: 14px;", "●"), " 咖啡馆/餐厅"),
+          p(tags$span(style = "color: #f39c12; font-size: 14px;", "●"), " 酒吧/酒馆"),
+          p(tags$span(style = "color: #9b59b6; font-size: 14px;", "●"), " 公共厕所"),
+          p(tags$span(style = "color: #1abc9c; font-size: 14px;", "●"), " 饮水喷泉")
+        )
+        )
+      }
+    }
+  })
+
+  # 附近设施表格
+  output$nearby_facilities_table <- DT::renderDataTable({
+    if (!is.null(rv$nearby_facilities) && nrow(rv$nearby_facilities) > 0) {
+      # 根据类型和距离筛选数据
+      filtered_data <- rv$nearby_facilities
+      
+      # 类型筛选
+      if (!is.null(input$facility_type_filter) && input$facility_type_filter != "all") {
+        filtered_data <- filtered_data %>%
+          filter(facility_type == input$facility_type_filter)
+      }
+      
+      # 距离筛选
+      if (!is.null(input$distance_filter) && input$distance_filter != "all") {
+        max_distance <- as.numeric(input$distance_filter)
+        filtered_data <- filtered_data %>%
+          filter(distance <= max_distance)
+      }
+      
+      # 准备显示数据
+      display_data <- filtered_data %>%
+        select(
+          "类型" = facility_type,
+          "名称" = facility_name,
+          "信息" = facility_info,
+          "距离(km)" = distance
+        ) %>%
+        mutate(
+          "距离(km)" = round(`距离(km)`, 3)
+        )
+      
+      DT::datatable(
+        display_data,
+        options = list(
+          pageLength = 10,
+          scrollX = TRUE,
+          dom = 'tip',
+          searching = TRUE,
+          ordering = TRUE,
+          info = TRUE,
+          paging = TRUE
+        ),
+        rownames = FALSE,
+        filter = 'none'
+      ) %>%
+        DT::formatStyle(
+          "类型",
+          backgroundColor = DT::styleEqual(
+            c("Cafe/Restaurant", "Bar/Pub", "Landmark", "Public Toilet", "Drinking Fountain"),
+            c("#e3f2fd", "#fff3e0", "#f3e5f5", "#e8f5e8", "#e0f2f1")
+          )
+        ) %>%
+        DT::formatStyle(
+          "距离(km)",
+          textAlign = "right"
+        )
+    }
+  }, server = FALSE)
 
   # ===========================================================================
   # 文化景点页面
