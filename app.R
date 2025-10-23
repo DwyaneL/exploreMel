@@ -71,6 +71,7 @@ ui <- dashboardPage(
       menuItem("探索地图", tabName = "map", icon = icon("map-marked-alt")),
       menuItem("文化景点", tabName = "attractions", icon = icon("palette")),
       menuItem("餐饮美食", tabName = "dining", icon = icon("utensils")),
+      menuItem("酒吧夜生活", tabName = "bars", icon = icon("beer")),
       menuItem("人流分析", tabName = "pedestrian", icon = icon("users"))
     ),
 
@@ -99,21 +100,21 @@ ui <- dashboardPage(
                                   "纪念碑" = "Monument",
                                   "雕塑" = "Memorial"),
                         selected = c("Art", "Fountain", "Monument", "Memorial"))
-    ),
-
-    # 餐饮筛选器
-    conditionalPanel(
-      condition = "input.sidebar == 'dining'",
-      hr(),
-      h4("筛选选项", style = "padding-left: 15px;"),
-      selectInput("dining_type", "类型:",
-                 choices = c("全部" = "all",
-                           "咖啡馆/餐厅" = "cafes",
-                           "酒吧/酒馆" = "bars"),
-                 selected = "all"),
-      checkboxInput("outdoor_only", "仅显示有户外座位", FALSE)
     )
   ),
+  #   # 餐饮筛选器
+  #   conditionalPanel(
+  #     condition = "input.sidebar == 'dining'",
+  #     hr(),
+  #     h4("筛选选项", style = "padding-left: 15px;"),
+  #     selectInput("dining_type", "类型:",
+  #                choices = c("全部" = "all",
+  #                          "咖啡馆/餐厅" = "cafes",
+  #                          "酒吧/酒馆" = "bars"),
+  #                selected = "all"),
+  #     checkboxInput("outdoor_only", "仅显示有户外座位", FALSE)
+  #   )
+  # ),
 
   # 主内容区
   dashboardBody(
@@ -139,6 +140,7 @@ ui <- dashboardPage(
         .leaflet-container { border-radius: 5px; }
       ")),
       tags$script(HTML("
+        
         // 当切换到人流分析标签时，强制刷新Tableau可视化
         $(document).on('shown.bs.tab', 'a[data-toggle=\"tab\"]', function(e) {
           if($(e.target).parent().find('a').attr('data-value') === 'pedestrian') {
@@ -179,7 +181,8 @@ ui <- dashboardPage(
             p("本应用基于墨尔本市开放数据，为游客提供："),
             tags$ul(
               tags$li(strong("文化景点："), "公共艺术品、雕塑、纪念碑"),
-              tags$li(strong("餐饮美食："), "咖啡馆、餐厅、酒吧"),
+              tags$li(strong("餐饮美食："), "咖啡馆、餐厅"),
+              tags$li(strong("酒吧夜生活："), "酒吧、酒馆"),
               tags$li(strong("实用设施："), "公共厕所、饮水喷泉"),
               tags$li(strong("人流分析："), "了解热门地点和最佳访问时间")
             ),
@@ -199,7 +202,8 @@ ui <- dashboardPage(
             tags$ol(
               tags$li(strong("探索地图："), "查看所有景点、餐饮和设施位置"),
               tags$li(strong("文化景点："), "发现墨尔本的艺术品和历史遗迹"),
-              tags$li(strong("餐饮美食："), "寻找咖啡馆、餐厅和酒吧"),
+              tags$li(strong("餐饮美食："), "寻找咖啡馆和餐厅"),
+              tags$li(strong("酒吧夜生活："), "探索墨尔本丰富的夜生活文化和酒吧文化"),
               tags$li(strong("人流分析："), "了解不同时段的访客模式")
             ),
             hr(),
@@ -302,27 +306,69 @@ ui <- dashboardPage(
         p("发现墨尔本著名的咖啡文化和多样化的餐饮选择。"),
 
         fluidRow(
-          valueBoxOutput("vbox_total_dining", width = 3),
           valueBoxOutput("vbox_cafes", width = 3),
-          valueBoxOutput("vbox_bars", width = 3),
-          valueBoxOutput("vbox_outdoor", width = 3)
+          valueBoxOutput("vbox_top_area", width = 3),
+
+          valueBoxOutput("vbox_outdoor", width = 3),
+          valueBoxOutput("vbox_dining_year", width = 3)
+
         ),
 
-        fluidRow(
-          box(
-            title = "餐饮地图", status = "primary", solidHeader = TRUE, width = 12,
-            leafletOutput("dining_map", height = 500)
-          )
-        ),
+        # fluidRow(
+        #   box(
+        #     title = "餐饮地图", status = "primary", solidHeader = TRUE, width = 12,
+        #     leafletOutput("dining_map", height = 500)
+        #   )
+        # ),
 
         fluidRow(
           box(
             title = "餐饮分布 - Tableau可视化", status = "warning", solidHeader = TRUE,
             width = 12,
-            # Tableau仪表板嵌入 - 2000x600的仪表板
-            div(style = "width: 100%; height: 650px; overflow: auto;",
+            # Tableau仪表板嵌入 - 自适应尺寸
+            div(style = "width: 100%; height: 100vh; min-height: 800px;overflow:scroll",
               tableauPublicViz(
                 id = "restaurant_viz",
+                url = "https://public.tableau.com/shared/ZQM44P3N9?:display_count=n&:origin=viz_share_link",
+                height = "1600px",
+                device = "desktop",
+                toolbar = "hidden"
+              )
+            )
+          )
+        )
+      ),
+
+      # ===========================================================================
+      # 酒吧夜生活
+      # ===========================================================================
+      tabItem(
+        tabName = "bars",
+        h2("酒吧夜生活"),
+        p("探索墨尔本丰富的夜生活文化和酒吧文化。"),
+
+        fluidRow(
+          valueBoxOutput("vbox_total_bars", width = 3),
+          valueBoxOutput("vbox_bars_capacity", width = 3),
+          valueBoxOutput("vbox_bars_areas", width = 3),
+          valueBoxOutput("vbox_bars_year", width = 3)
+        ),
+
+        fluidRow(
+          box(
+            title = "酒吧地图", status = "primary", solidHeader = TRUE, width = 12,
+            leafletOutput("bars_map", height = 500)
+          )
+        ),
+
+        fluidRow(
+          box(
+            title = "酒吧分布 - Tableau可视化", status = "warning", solidHeader = TRUE,
+            width = 12,
+            # Tableau仪表板嵌入
+            div(style = "width: 100%; height: 650px; overflow: auto;",
+              tableauPublicViz(
+                id = "bars_viz",
                 url = "https://public.tableau.com/views/Restaurants_in_Melbourne/Restaurants_in_Melbourne?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
                 height = "600px",
                 width = "2000px",
@@ -423,7 +469,7 @@ server <- function(input, output, session) {
   })
 
   output$info_dining <- renderInfoBox({
-    count <- nrow(data$cafes) + nrow(data$bars)
+    count <- nrow(data$cafes)
     infoBox(
       "餐饮场所",
       count,
@@ -1117,16 +1163,6 @@ server <- function(input, output, session) {
   # 餐饮美食页面
   # ===========================================================================
 
-  output$vbox_total_dining <- renderValueBox({
-    count <- nrow(data$cafes) + nrow(data$bars)
-    valueBox(
-      value = count,
-      subtitle = "餐饮场所总数",
-      icon = icon("utensils"),
-      color = "olive"
-    )
-  })
-
   output$vbox_cafes <- renderValueBox({
     count <- nrow(data$cafes)
     valueBox(
@@ -1137,15 +1173,6 @@ server <- function(input, output, session) {
     )
   })
 
-  output$vbox_bars <- renderValueBox({
-    count <- nrow(data$bars)
-    valueBox(
-      value = count,
-      subtitle = "酒吧/酒馆",
-      icon = icon("beer"),
-      color = "orange"
-    )
-  })
 
   output$vbox_outdoor <- renderValueBox({
     count <- sum(data$cafes$has_outdoor, na.rm = TRUE)
@@ -1156,66 +1183,175 @@ server <- function(input, output, session) {
       color = "yellow"
     )
   })
+output$vbox_top_area <- renderValueBox({
+  top_area <- data$cafes %>%
+    dplyr::count(clue_area) %>%
+    dplyr::arrange(desc(n)) %>%
+    dplyr::slice(1) %>%
+    dplyr::pull(clue_area)
+  
+  # 如果区域名称太长，截断显示
+  display_area <- ifelse(nchar(top_area) > 15, 
+                        paste0(substr(top_area, 1, 12), "..."), 
+                        top_area)
+  
+  valueBox(
+    value = display_area,
+    subtitle = "餐饮最密集区域",
+    icon = icon("map-marker-alt"),
+    color = "purple"
+  )
+})
 
-  # 筛选餐饮数据
-  filtered_dining <- reactive({
-    cafes_filtered <- data$cafes
-    bars_filtered <- data$bars
-
-    # 户外座位筛选
-    if (input$outdoor_only) {
-      cafes_filtered <- cafes_filtered %>% filter(has_outdoor == TRUE)
-    }
-
-    # 类型筛选
-    if (input$dining_type == "cafes") {
-      return(list(cafes = cafes_filtered, bars = data.frame()))
-    } else if (input$dining_type == "bars") {
-      return(list(cafes = data.frame(), bars = bars_filtered))
-    } else {
-      return(list(cafes = cafes_filtered, bars = bars_filtered))
-    }
+  output$vbox_dining_year <- renderValueBox({
+    cafes_max_year <- max(data$cafes$census_year, na.rm = TRUE)
+    valueBox(
+      value = cafes_max_year,
+      subtitle = "最新数据年份",
+      icon = icon("calendar"),
+      color = "teal"
+    )
   })
 
-  output$dining_map <- renderLeaflet({
-    dining <- filtered_dining()
+  # 筛选餐饮数据
+  # filtered_dining <- reactive({
+  #   cafes_filtered <- data$cafes
+  #   bars_filtered <- data$bars
+  #
+  #   # 户外座位筛选
+  #   if (input$outdoor_only) {
+  #     cafes_filtered <- cafes_filtered %>% filter(has_outdoor == TRUE)
+  #   }
+  #
+  #   # 类型筛选
+  #   if (input$dining_type == "cafes") {
+  #     return(list(cafes = cafes_filtered, bars = data.frame()))
+  #   } else if (input$dining_type == "bars") {
+  #     return(list(cafes = data.frame(), bars = bars_filtered))
+  #   } else {
+  #     return(list(cafes = cafes_filtered, bars = bars_filtered))
+  #   }
+  # })
 
+  # output$dining_map <- renderLeaflet({
+  #   dining <- filtered_dining()
+
+  #   map <- leaflet() %>%
+  #     addProviderTiles(providers$CartoDB.Positron) %>%
+  #     setView(lng = 144.9631, lat = -37.8136, zoom = 13)
+
+  #   # 添加咖啡馆
+  #   if (nrow(dining$cafes) > 0) {
+  #     map <- map %>%
+  #       addCircleMarkers(
+  #         data = dining$cafes,
+  #         lng = ~longitude,
+  #         lat = ~latitude,
+  #         radius = 7,
+  #         color = "#3498db",
+  #         fillOpacity = 0.7,
+  #         stroke = TRUE,
+  #         weight = 2,
+  #         popup = ~paste0(
+  #           "<strong>", trading_name, "</strong><br/>",
+  #           "类型: ", industry_desc, "<br/>",
+  #           "座位数: ", num_seats, "<br/>",
+  #           "座位类型: ", seating_type, "<br/>",
+  #           ifelse(has_outdoor, "✓ 有户外座位", "仅室内座位"), "<br/>",
+  #           "区域: ", clue_area
+  #         ),
+  #         group = "咖啡馆/餐厅"
+  #       )
+  #   }
+
+  #   # 添加酒吧
+  #   if (nrow(dining$bars) > 0) {
+  #     map <- map %>%
+  #       addCircleMarkers(
+  #         data = dining$bars,
+  #         lng = ~longitude,
+  #         lat = ~latitude,
+  #         radius = 7,
+  #         color = "#f39c12",
+  #         fillOpacity = 0.7,
+  #         stroke = TRUE,
+  #         weight = 2,
+  #         popup = ~paste0(
+  #           "<strong>", trading_name, "</strong><br/>",
+  #           "容量: ", num_patrons, " 人<br/>",
+  #           "区域: ", clue_area
+  #         ),
+  #         group = "酒吧/酒馆"
+  #       )
+  #   }
+
+  #   # 添加图层控制
+  #   map <- map %>%
+  #     addLayersControl(
+  #       overlayGroups = c("咖啡馆/餐厅", "酒吧/酒馆"),
+  #       options = layersControlOptions(collapsed = FALSE)
+  #     )
+
+  #   return(map)
+  # })
+
+  # ===========================================================================
+  # 酒吧夜生活页面
+  # ===========================================================================
+
+  output$vbox_total_bars <- renderValueBox({
+    count <- nrow(data$bars)
+    valueBox(
+      value = count,
+      subtitle = "酒吧总数",
+      icon = icon("beer"),
+      color = "orange"
+    )
+  })
+
+  output$vbox_bars_capacity <- renderValueBox({
+    total_capacity <- sum(data$bars$num_patrons, na.rm = TRUE)
+    valueBox(
+      value = total_capacity,
+      subtitle = "总容量",
+      icon = icon("users"),
+      color = "red"
+    )
+  })
+
+  output$vbox_bars_areas <- renderValueBox({
+    unique_areas <- n_distinct(data$bars$clue_area, na.rm = TRUE)
+    valueBox(
+      value = unique_areas,
+      subtitle = "覆盖区域",
+      icon = icon("map-marker-alt"),
+      color = "purple"
+    )
+  })
+
+  output$vbox_bars_year <- renderValueBox({
+    max_year <- max(data$bars$census_year, na.rm = TRUE)
+    valueBox(
+      value = max_year,
+      subtitle = "最新数据年份",
+      icon = icon("calendar"),
+      color = "teal"
+    )
+  })
+
+  output$bars_map <- renderLeaflet({
     map <- leaflet() %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
       setView(lng = 144.9631, lat = -37.8136, zoom = 13)
 
-    # 添加咖啡馆
-    if (nrow(dining$cafes) > 0) {
-      map <- map %>%
-        addCircleMarkers(
-          data = dining$cafes,
-          lng = ~longitude,
-          lat = ~latitude,
-          radius = 7,
-          color = "#3498db",
-          fillOpacity = 0.7,
-          stroke = TRUE,
-          weight = 2,
-          popup = ~paste0(
-            "<strong>", trading_name, "</strong><br/>",
-            "类型: ", industry_desc, "<br/>",
-            "座位数: ", num_seats, "<br/>",
-            "座位类型: ", seating_type, "<br/>",
-            ifelse(has_outdoor, "✓ 有户外座位", "仅室内座位"), "<br/>",
-            "区域: ", clue_area
-          ),
-          group = "咖啡馆/餐厅"
-        )
-    }
-
     # 添加酒吧
-    if (nrow(dining$bars) > 0) {
+    if (nrow(data$bars) > 0) {
       map <- map %>%
         addCircleMarkers(
-          data = dining$bars,
+          data = data$bars,
           lng = ~longitude,
           lat = ~latitude,
-          radius = 7,
+          radius = 8,
           color = "#f39c12",
           fillOpacity = 0.7,
           stroke = TRUE,
@@ -1223,18 +1359,12 @@ server <- function(input, output, session) {
           popup = ~paste0(
             "<strong>", trading_name, "</strong><br/>",
             "容量: ", num_patrons, " 人<br/>",
-            "区域: ", clue_area
+            "区域: ", clue_area, "<br/>",
+            "数据年份: ", census_year
           ),
           group = "酒吧/酒馆"
         )
     }
-
-    # 添加图层控制
-    map <- map %>%
-      addLayersControl(
-        overlayGroups = c("咖啡馆/餐厅", "酒吧/酒馆"),
-        options = layersControlOptions(collapsed = FALSE)
-      )
 
     return(map)
   })

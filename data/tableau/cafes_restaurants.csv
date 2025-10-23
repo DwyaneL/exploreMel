@@ -815,6 +815,7 @@ Fukutontei Ramen,"Shop 15, Ground 120 Pearl River Road DOCKLANDS VIC 3008",Cafes
 Hanoi Square,"Unit 14, Ground 60 Siddeley Street DOCKLANDS VIC 3008",Cafes and Restaurants,Seats - Indoor,22,144.95247887623847,-37.82288362415,Docklands,Small (< 30 seats),FALSE,2023
 Melrose Place NM,15 Melrose Street NORTH MELBOURNE VIC 3051,Takeaway Food Services,Seats - Indoor,8,144.9414035519,-37.79501732002552,North Melbourne,Small (< 30 seats),FALSE,2023
 Cafe Shots Espresso Bar,"Part Ground , 224 Queen Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,8,144.9601628034,-37.81320136553631,Melbourne (CBD),Small (< 30 seats),FALSE,2019
+Jjs Connoissures,"Ground , 36 Lonsdale Street MELBOURNE 3000",Cafes and Restaurants,Seats - Outdoor,30,144.971074722117,-37.80914252179053,Melbourne (CBD),Medium (30-99 seats),TRUE,2002
 Spencer Street Transit Kiosk,"Kiosk 2, 205 Spencer Street DOCKLANDS 3008",Takeaway Food Services,Seats - Indoor,12,144.95233000656572,-37.815969711379914,Docklands,Small (< 30 seats),FALSE,2002
 City Baths Cafe,420 Swanston Street MELBOURNE 3000,Cafes and Restaurants,Seats - Outdoor,23,144.9633943759665,-37.807046483465065,Melbourne (CBD),Small (< 30 seats),TRUE,2005
 Cafe 36,"Ground , 36-40 La Trobe Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,18,144.96757516755,-37.80812915431867,Melbourne (CBD),Small (< 30 seats),FALSE,2014
@@ -1360,6 +1361,7 @@ The Leveson,46-50 Leveson Street NORTH MELBOURNE 3051,"Pubs, Taverns and Bars",S
 KFC,Part 1 West Gate Freeway FISHERMANS BEND 3207,Takeaway Food Services,Seats - Outdoor,20,144.91938172452012,-37.8290096592,Port Melbourne,Small (< 30 seats),TRUE,2014
 McDonalds,"Unit 3, Basement , 341-357 Bourke Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,62,144.96366205556774,-37.8144333236,Melbourne (CBD),Medium (30-99 seats),FALSE,2015
 Westpac,215 Lygon Street CARLTON 3053,Banking,Seats - Outdoor,48,144.96670083814325,-37.8002805607,Carlton,Medium (30-99 seats),TRUE,2013
+JJ's Connoisseurs,"Ground , 38 Lonsdale Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,60,144.971074722117,-37.80914252179053,Melbourne (CBD),Medium (30-99 seats),FALSE,2002
 Collins Street Croissant Cafe,"Part Ground , 379 Collins Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,140,144.96200104500002,-37.81716273583061,Melbourne (CBD),Large (100+ seats),FALSE,2011
 Cafe Blu,"Tenancy 9, Ground , 181-185 William Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,12,144.95761497465,-37.815255543818864,Melbourne (CBD),Small (< 30 seats),FALSE,2012
 D'Urso Caffe Con Gusto,"Tenancy 10, Ground , 181-185 William Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,10,144.95761497465,-37.815255543818864,Melbourne (CBD),Small (< 30 seats),FALSE,2012
@@ -1448,6 +1450,7 @@ Comfort Hotel East Melbourne,90 Albert Street EAST MELBOURNE VIC 3002,Accommodat
 Mill & Bakery at Central Pier,"Shed 9, Part  Harbour Esplanade DOCKLANDS 3008",Cafes and Restaurants,Seats - Outdoor,15,144.9436688253851,-37.81648918185,Docklands,Small (< 30 seats),TRUE,2019
 Power Cafe,Part Ground 628 Bourke Street MELBOURNE VIC 3000,Takeaway Food Services,Seats - Indoor,20,144.9548020863,-37.81596969261824,Melbourne (CBD),Small (< 30 seats),FALSE,2020
 Al Capone's Pizzeria,10 Gatehouse Drive KENSINGTON VIC 3031,Cafes and Restaurants,Seats - Indoor,30,144.91943059695922,-37.791681697849995,Kensington,Medium (30-99 seats),FALSE,2020
+Cup of Truth,"Kiosk 12,  Flinders Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,6,144.96577579898758,-37.8186817776,Melbourne (CBD),Small (< 30 seats),FALSE,2011
 Bright Young Things,29 Niagara Lane MELBOURNE 3000,Catering Services,Seats - Indoor,75,144.9612981952224,-37.8130203548,Melbourne (CBD),Medium (30-99 seats),FALSE,2011
 Cydus Internet & Lan Games,292 Victoria Street NORTH MELBOURNE 3051,Internet Service Providers and Web Search Portals,Seats - Indoor,60,144.95666818345,-37.80572909184238,North Melbourne,Medium (30-99 seats),FALSE,2011
 Rock the Wok,"Tenancy 8, Ground , 181-185 William Street MELBOURNE 3000",Cafes and Restaurants,Seats - Outdoor,24,144.95761497465,-37.815255543818864,Melbourne (CBD),Small (< 30 seats),TRUE,2012
@@ -1809,6 +1812,7 @@ B & B' Guette Cafe,305-307 Exhibition Street MELBOURNE 3000,Cafes and Restaurant
 Da Bruno Ristorante Pizza,"Ground , 176 Wellington Parade EAST MELBOURNE 3002",Cafes and Restaurants,Seats - Indoor,72,144.9843027931,-37.81583719095616,East Melbourne,Medium (30-99 seats),FALSE,2019
 Kasskass,490 Flinders Street MELBOURNE 3000,Cafes and Restaurants,Seats - Indoor,40,144.95799107739998,-37.819950483114,Melbourne (CBD),Medium (30-99 seats),FALSE,2018
 Goldern Nugget,"Ground , 117 Lonsdale Street MELBOURNE 3000",Other Gambling Activities,Seats - Indoor,50,144.9689026007,-37.81079279084446,Melbourne (CBD),Medium (30-99 seats),FALSE,2018
+So & So Chinese,"Shop 2, 353 Little Collins Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,18,144.96298728750682,-37.8159139413133,Melbourne (CBD),Small (< 30 seats),FALSE,2002
 Sarpinos Pizzeria,"Shop 7, 399 Bourke Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,22,144.96219574505,-37.81513770286175,Melbourne (CBD),Small (< 30 seats),FALSE,2011
 Ed's Food Hut,"Shop 11, 399 Bourke Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,36,144.96219574505,-37.81513770286175,Melbourne (CBD),Medium (30-99 seats),FALSE,2011
 Deliciouse Malaysian Cuisine and Vietnam noodle,"Shop 10, 399 Bourke Street MELBOURNE 3000",Takeaway Food Services,Seats - Indoor,20,144.96219574505,-37.81513770286175,Melbourne (CBD),Small (< 30 seats),FALSE,2011
@@ -2309,6 +2313,7 @@ Hot Space,"Ground , 11-15 Waratah Place MELBOURNE 3000",Cafes and Restaurants,Se
 Nando's,Ground 27-29 Elizabeth Street MELBOURNE VIC 3000,Cafes and Restaurants,Seats - Indoor,84,144.9643699829232,-37.81754506025,Melbourne (CBD),Medium (30-99 seats),FALSE,2021
 Roule Galette,"Shop 2, 237 Flinders Lane MELBOURNE VIC 3000",Cafes and Restaurants,Seats - Indoor,15,144.96642532035,-37.81682249334388,Melbourne (CBD),Small (< 30 seats),FALSE,2021
 Sushi Ten,"Shop 14,  Flinders Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,52,144.96655159124998,-37.81724823055968,Melbourne (CBD),Medium (30-99 seats),FALSE,2017
+Schwobs Swiss Gourmet Sandwich Bar,"Ground , 34 Lonsdale Street MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,80,144.971074722117,-37.80914252179053,Melbourne (CBD),Medium (30-99 seats),FALSE,2002
 Flagstaff City,45-55 Dudley Street WEST MELBOURNE 3003,Accommodation,Seats - Indoor,30,144.9510276343,-37.810104988081754,West Melbourne (Residential),Medium (30-99 seats),FALSE,2017
 Five66,566 Flinders Street MELBOURNE 3000,Cafes and Restaurants,Seats - Indoor,55,144.95533640614002,-37.82071127185,Melbourne (CBD),Medium (30-99 seats),FALSE,2018
 Oter,"Basement , 137-139 Flinders Lane MELBOURNE 3000",Cafes and Restaurants,Seats - Indoor,60,144.97004136319998,-37.81573243554802,Melbourne (CBD),Medium (30-99 seats),FALSE,2018
@@ -2396,6 +2401,7 @@ Riva Cafe Bar,"Shop 9, 309-325 Bourke Street MELBOURNE 3000",Cafes and Restauran
 Drumplings,227-229 Bourke Street MELBOURNE 3000,Cafes and Restaurants,Seats - Outdoor,24,144.96692489855,-37.81340948433001,Melbourne (CBD),Small (< 30 seats),TRUE,2019
 Mercure Hotel,13-23 Spring Street MELBOURNE VIC 3000,Accommodation,Seats - Indoor,80,144.97420369281198,-37.814769022250005,Melbourne (CBD),Medium (30-99 seats),FALSE,2021
 Marriott Corsia,Shop G06 6 Wharf Street DOCKLANDS VIC 3008,Cafes and Restaurants,Seats - Indoor,16,144.93799833512347,-37.8132875139,Docklands,Small (< 30 seats),FALSE,2023
+Grosvenor Tavern,"Basement , 25 Little Collins Street MELBOURNE 3000","Pubs, Taverns and Bars",Seats - Indoor,125,144.96298728750682,-37.8159139413133,Melbourne (CBD),Large (100+ seats),FALSE,2002
 Misty Place,"Ground 0, 7-9 Hosier Lane MELBOURNE 3000","Pubs, Taverns and Bars",Seats - Indoor,50,144.9689693224902,-37.81638318560175,Melbourne (CBD),Medium (30-99 seats),FALSE,2003
 New Chatterbox Cafe,"Ground , 318-322 King Street MELBOURNE 3000",Cafes and Restaurants,Seats - Outdoor,12,144.95432361823282,-37.81270179181806,Melbourne (CBD),Small (< 30 seats),TRUE,2005
 Little Swanston China Express,323-0 Lonsdale Street MELBOURNE 3000,Takeaway Food Services,Seats - Indoor,24,144.96261287011987,-37.811578008760115,Melbourne (CBD),Small (< 30 seats),FALSE,2006
@@ -2615,6 +2621,7 @@ Port Diner,"Lot 163, 410 Footscray Road WEST MELBOURNE VIC 3003",Takeaway Food S
 Man Mo @ Wtc,"Shop 13-15, Ground 18-38 Siddeley Street DOCKLANDS VIC 3008",Cafes and Restaurants,Seats - Indoor,110,144.9537825432986,-37.8225810113,Docklands,Large (100+ seats),FALSE,2022
 Happy Meals Melbourne Pty Ltd,Part Ground 78 Howard Street NORTH MELBOURNE VIC 3051,Cafes and Restaurants,Seats - Indoor,70,144.95449684412654,-37.803048048700006,North Melbourne,Medium (30-99 seats),FALSE,2022
 Parcs MVT,198-202 Little Collins Street MELBOURNE VIC 3000,Cafes and Restaurants,Seats - Indoor,25,144.96715296055,-37.813901255761195,Melbourne (CBD),Small (< 30 seats),FALSE,2023
+Cafe Blu On Boundary,185 Boundary Road NORTH MELBOURNE 3051,Cafes and Restaurants,Seats - Indoor,37,144.93937343271296,-37.78886960165,North Melbourne,Medium (30-99 seats),FALSE,2012
 Kenny's Bakery Cafe,18 Elizabeth Street MELBOURNE 3000,Takeaway Food Services,Seats - Indoor,6,144.9634508336467,-37.81582214165,Melbourne (CBD),Small (< 30 seats),FALSE,2019
 Ling Nam Chinese Restaurant,204 Little Bourke Street MELBOURNE 3000,Cafes and Restaurants,Seats - Indoor,90,144.96654122755,-37.81199314026773,Melbourne (CBD),Medium (30-99 seats),FALSE,2019
 Cafe Sehion,298 Flinders Street MELBOURNE VIC 3000,Takeaway Food Services,Seats - Indoor,5,144.9643548475,-37.81807241987738,Melbourne (CBD),Small (< 30 seats),FALSE,2023

@@ -1,5 +1,6 @@
 trading_name,business_address,num_patrons,longitude,latitude,clue_area,capacity_category,census_year
 The Owl & The Pussycat,"Shop 2, Ground , 333 Exhibition Street MELBOURNE 3000",100,144.96806936930756,-37.80780226572104,Melbourne (CBD),Medium (50-149),2007
+Underbridge Sports Bar & Cafe,Part 816 Lorimer Street PORT MELBOURNE 3207,60,144.9309905271,-37.82204522292776,Port Melbourne,Medium (50-149),2015
 VS Sports Bar,"Part Level 2, 206 Bourke Street MELBOURNE 3000",80,144.96687115185,-37.81267380947152,Melbourne (CBD),Medium (50-149),2017
 Little Red Pocket,"Front Mezzanine , 422 Little Collins Street MELBOURNE 3000",200,144.960326283,-37.81590751060847,Melbourne (CBD),Large (150+),2018
 Ding Dong Lounge,"Level 1, 18 Market Lane MELBOURNE 3000",300,144.96940300382883,-37.8117510903,Melbourne (CBD),Large (150+),2018
@@ -64,6 +65,7 @@ The Last Jar,Royal Artillery Hotel 614-616 Elizabeth Street MELBOURNE VIC 3000,2
 The Curtin,John Curtin Hotel 27-31 Lygon Street CARLTON VIC 3053,283,144.965698550926,-37.806199457999995,Carlton,Large (150+),2023
 The Angry Dog,405-407 Spencer Street WEST MELBOURNE VIC 3003,200,144.9499485073871,-37.81089026235,West Melbourne (Residential),Large (150+),2023
 The General Assembly,29 South Wharf Promenade SOUTH WHARF VIC 3006,625,144.9506146124694,-37.82411173505,Southbank,Large (150+),2023
+44 Bar,42-44 Lonsdale Street MELBOURNE 3000,260,144.971074722117,-37.80914252179053,Melbourne (CBD),Large (150+),2002
 Hotel Milan,186-190 Lygon Street CARLTON 3053,540,144.96693072583696,-37.80264148995404,Carlton,Large (150+),2006
 Recorded Music Salon,Collins Street MELBOURNE 3000,110,144.97346124155,-37.81376862299815,Melbourne (CBD),Medium (50-149),2010
 Vibe Savoy Hotel Melbourne,626-636 Spencer Street MELBOURNE 3000,40,144.95392973346546,-37.81777222815,Melbourne (CBD),Small (< 50),2012
@@ -200,6 +202,7 @@ Watermark Bar,"Shop 9, 800 Bourke Street DOCKLANDS 3008",300,144.9450799835413,-
 Ice Lounge & Ski Lounge,"Ground , 296-298 Russell Street MELBOURNE 3000",152,144.96692730524177,-37.809572120750005,Melbourne (CBD),Large (150+),2012
 Rue Bebelons,267 Swanston Street MELBOURNE 3000,74,144.964048236249,-37.81076372395,Melbourne (CBD),Medium (50-149),2013
 Pop,68 Hardware Lane MELBOURNE 3000,280,144.9611061979,-37.8130703004677,Melbourne (CBD),Large (150+),2015
+Lost and Found,524 Macaulay Road KENSINGTON 3031,40,144.9286331931,-37.79404184602849,Kensington,Small (< 50),2015
 Burger Theory / The Hills Rooftop / The Tuxedo Cat,293-299 La Trobe Street MELBOURNE 3000,200,144.9605087922079,-37.810814483849995,Melbourne (CBD),Large (150+),2017
 University Hotel,"Part Ground , 272 Lygon Street CARLTON 3053",111,144.96724408945,-37.80052682305912,Carlton,Medium (50-149),2017
 Bennetts Lane Jazz Club,25 Bennetts Lane MELBOURNE 3000,300,144.96755702107387,-37.80889190335,Melbourne (CBD),Large (150+),2018
