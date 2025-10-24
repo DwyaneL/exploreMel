@@ -282,12 +282,12 @@ ui <- dashboardPage(
           box(
             title = "艺术品分布 - Tableau可视化", status = "success", solidHeader = TRUE,
             width = 12,
-            # Tableau仪表板嵌入 - 2000x600的仪表板
-            div(style = "width: 100%; height: 650px; overflow: auto;",
+            # Tableau仪表板嵌入 - 2000x800的仪表板
+            div(style = "width: 100%; height: 800px; overflow: auto;",
               tableauPublicViz(
                 id = "art_viz",
-                url = "https://public.tableau.com/shared/JBKS2Z28K?:display_count=n&:origin=viz_share_link",
-                height = "600px",
+                url = "https://public.tableau.com/views/Artist_17612959321560/Artist?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+                height = "800px",
                 width = "2000px",
                 device = "desktop",
                 toolbar = "hidden"
@@ -452,6 +452,35 @@ server <- function(input, output, session) {
       rv$busy_hours_data <- NULL
     })
   }
+
+  # 为 Tableau 树状图联动初始化所选艺术家状态
+  rv$selected_artists <- NULL
+
+  # 监听 Tableau 树状图(art_viz) 的选中变化，并保存所选艺术家
+  observeEvent(input$art_viz_mark_selection_changed, {
+    sel <- input$art_viz_mark_selection_changed
+    if (is.null(sel) || length(sel) == 0) {
+      rv$selected_artists <- NULL
+      return()
+    }
+    df <- tryCatch(as.data.frame(sel, stringsAsFactors = FALSE), error = function(e) NULL)
+    if (is.null(df) || nrow(df) == 0) {
+      rv$selected_artists <- NULL
+      return()
+    }
+    artistFieldCandidates <- c("Artist", "artist", "Artist Name", "ARTIST", "作者", "艺术家")
+    artist_col <- intersect(artistFieldCandidates, colnames(df))
+    if (length(artist_col) == 0) {
+      char_cols <- names(df)[vapply(df, is.character, logical(1))]
+      artist_col <- if (length(char_cols) > 0) char_cols[1] else character(0)
+    }
+    if (length(artist_col) == 0) {
+      rv$selected_artists <- NULL
+      return()
+    }
+    artists <- unique(na.omit(df[[artist_col[1]]]))
+    rv$selected_artists <- if (length(artists) > 0) artists else NULL
+  }, ignoreInit = TRUE)
   
   # ===========================================================================
   # 欢迎页面 - 信息框
@@ -1052,6 +1081,7 @@ server <- function(input, output, session) {
       setView(lng = 144.9631, lat = -37.8136, zoom = 13)
 
     selected_types <- input$attraction_types
+    selected_artists <- rv$selected_artists
 
     # 如果没有选择任何类型，返回空地图（不显示任何标记）
     if (is.null(selected_types) || length(selected_types) == 0) {
@@ -1061,6 +1091,9 @@ server <- function(input, output, session) {
     # 添加艺术品（紫色）
     if ("Art" %in% selected_types) {
       art_data <- data$artworks %>% filter(category == "Art")
+      if (!is.null(selected_artists) && length(selected_artists) > 0 && "artist" %in% names(art_data)) {
+        art_data <- art_data %>% filter(artist %in% selected_artists)
+      }
       if (nrow(art_data) > 0) {
         map <- map %>%
           addCircleMarkers(
@@ -1086,6 +1119,9 @@ server <- function(input, output, session) {
     # 添加喷泉（青色）
     if ("Fountain" %in% selected_types) {
       fountain_data <- data$artworks %>% filter(category == "Fountain")
+      if (!is.null(selected_artists) && length(selected_artists) > 0 && "artist" %in% names(fountain_data)) {
+        fountain_data <- fountain_data %>% filter(artist %in% selected_artists)
+      }
       if (nrow(fountain_data) > 0) {
         map <- map %>%
           addCircleMarkers(
@@ -1111,6 +1147,9 @@ server <- function(input, output, session) {
     # 添加纪念碑（红色）
     if ("Monument" %in% selected_types) {
       monument_data <- data$artworks %>% filter(category == "Monument")
+      if (!is.null(selected_artists) && length(selected_artists) > 0 && "artist" %in% names(monument_data)) {
+        monument_data <- monument_data %>% filter(artist %in% selected_artists)
+      }
       if (nrow(monument_data) > 0) {
         map <- map %>%
           addCircleMarkers(
@@ -1136,6 +1175,9 @@ server <- function(input, output, session) {
     # 添加雕塑（橙色）- 来自memorials数据集
     if ("Memorial" %in% selected_types) {
       sculpture_data <- data$pois %>% filter(type == "Memorial")
+      if (!is.null(selected_artists) && length(selected_artists) > 0 && "artist" %in% names(sculpture_data)) {
+        sculpture_data <- sculpture_data %>% filter(artist %in% selected_artists)
+      }
       if (nrow(sculpture_data) > 0) {
         map <- map %>%
           addCircleMarkers(
